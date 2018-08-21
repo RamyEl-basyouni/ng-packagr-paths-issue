@@ -1,0 +1,12 @@
+﻿export const StrategyPlanID = 'StrategyPlanID';
+export const OrganizationUnitID = 'OrganizationUnitID';
+export const ItemID = 'ItemID';
+export const ParentStrategyItemID = 'ParentStrategyItemID';
+export const SDate = 'SDate';
+export const YTD = 'YTD';
+export const currentUser = 'currentUser';
+export const token = 'token';
+export const emptyGuid = '00000000-0000-0000-0000-000000000000';
+export const UsernameInValidChars = "<>%^&:;',~`";
+export const NumbersOnlyRegularExpression = /^[0-9]*$/;
+export const language = 'language';

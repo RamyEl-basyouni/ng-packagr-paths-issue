@@ -1,0 +1,1903 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\TypeScript\Microsoft.TypeScript.Default.props" Condition="Exists('$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\TypeScript\Microsoft.TypeScript.Default.props')" />
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{68234FF1-C42C-4DF2-8FC1-1ACFD4389B28}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>ITWorx.PMF.OnTrack.Presentation</RootNamespace>
+    <AssemblyName>ITWorx.PMF.OnTrack.Presentation</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <UseIISExpress>false</UseIISExpress>
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+    <UseGlobalApplicationHostFile />
+    <TypeScriptToolsVersion>2.1</TypeScriptToolsVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <FilesToIncludeForPublish>AllFilesInProjectFolder</FilesToIncludeForPublish>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <FilesToIncludeForPublish>AllFilesInProjectFolder</FilesToIncludeForPublish>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="scripts\postbuild.lib.js" />
+    <Content Include="scripts\publish.testing.js" />
+    <Content Include="src\app\administration\cube-management\cube-management.component.html" />
+    <Content Include="src\app\administration\reporting-management\reporting-management.component.html" />
+    <Content Include="src\app\administration\tag-management\tag-management.component.html" />
+    <Content Include="src\app\app.component.css" />
+    <Content Include="src\app\app.component.html" />
+    <Content Include="src\app\data-integration\data-integration-login.component.html" />
+    <Content Include="src\app\data-integration\strategy-item-data-integration\strategy-item-data-integration-history\strategy-item-data-integration-history.component.html" />
+    <Content Include="src\app\data-integration\strategy-item-data-integration\strategy-item-data-integration.component.html" />
+    <Content Include="src\app\data-integration\kpi-data-integration\kpi-data-integration-history\kpi-data-integration-history.component.html" />
+    <Content Include="src\app\data-integration\kpi-data-integration\kpi-data-integration.component.html" />
+    <Content Include="src\app\high-level-dashboards\themes-scorecard\themes-scorecard.component.html" />
+    <Content Include="src\app\high-level-dashboards\perspectives-scorecard\perspectives-scorecard.component.html" />
+    <Content Include="src\app\high-level-dashboards\scorecards\kpis-initiatives-score-card\kpis-initiatives-score-card.component.html" />
+    <Content Include="src\app\high-level-dashboards\scorecards\programs-score-card\programs-score-card.component.html" />
+    <Content Include="src\app\high-level-dashboards\scorecards\projects-score-card\projects-score-card.component.html" />
+    <Content Include="src\app\issues\add-edit-issues\add-edit-issues.component.css" />
+    <Content Include="src\app\issues\add-edit-issues\add-edit-issues.component.html" />
+    <Content Include="src\app\issues\issues.component.html" />
+    <Content Include="src\app\item-level-dashboards\kpi-dashboard\kpi-attributes\kpi-attributes.component.css" />
+    <Content Include="src\app\item-level-dashboards\kpi-dashboard\kpi-attributes\kpi-attributes.component.html" />
+    <Content Include="src\app\item-level-dashboards\kpi-dashboard\kpi-benchmarks\kpi-benchmarks.component.css" />
+    <Content Include="src\app\item-level-dashboards\kpi-dashboard\kpi-benchmarks\kpi-benchmarks.component.html" />
+    <Content Include="src\app\item-level-dashboards\kpi-dashboard\kpi-calculations\kpi-calculations.component.html" />
+    <Content Include="src\app\item-level-dashboards\kpi-dashboard\kpi-comments\kpi-comments.component.css" />
+    <Content Include="src\app\item-level-dashboards\kpi-dashboard\kpi-comments\kpi-comments.component.html" />
+    <Content Include="src\app\item-level-dashboards\kpi-dashboard\kpi-dashboard.component.html" />
+    <Content Include="src\app\item-level-dashboards\kpi-dashboard\kpi-dimensions-chart\kpi-dimensions-chart.component.html" />
+    <Content Include="src\app\item-level-dashboards\kpi-dashboard\kpi-dimensions-table\kpi-dimensions-table.component.html" />
+    <Content Include="src\app\item-level-dashboards\kpi-dashboard\kpi-header\kpi-header-details\kpi-header-details.component.html" />
+    <Content Include="src\app\item-level-dashboards\kpi-dashboard\kpi-header\kpi-header-score\kpi-header-score.component.html" />
+    <Content Include="src\app\item-level-dashboards\kpi-dashboard\kpi-header\kpi-header.component.html" />
+    <Content Include="src\app\item-level-dashboards\kpi-dashboard\kpi-header\kpi-score-chart\kpi-score-chart.component.html" />
+    <Content Include="src\app\item-level-dashboards\kpi-dashboard\kpi-linked-strategy-items\kpi-linked-strategy-items.component.css" />
+    <Content Include="src\app\item-level-dashboards\kpi-dashboard\kpi-linked-strategy-items\kpi-linked-strategy-items.component.html" />
+    <Content Include="src\app\item-level-dashboards\kpi-dashboard\kpi-timeline\kpi.timeline.component.html" />
+    <Content Include="src\app\item-level-dashboards\kpi-dashboard\kpi-trend-chart\kpi-trend-chart.component.html" />
+    <Content Include="src\app\item-level-dashboards\operational-strategy-items-dashboards\item-attributes\item-attributes.component.css" />
+    <Content Include="src\app\item-level-dashboards\operational-strategy-items-dashboards\item-attributes\item-attributes.component.html" />
+    <Content Include="src\app\item-level-dashboards\operational-strategy-items-dashboards\item-ganttchart\item-ganttchart.component.css" />
+    <Content Include="src\app\item-level-dashboards\operational-strategy-items-dashboards\item-ganttchart\item-ganttchart.component.html" />
+    <Content Include="src\app\shared\item-milestones-and-outputs\item-milestones-and-outputs.component.css" />
+    <Content Include="src\app\shared\item-milestones-and-outputs\item-milestones-and-outputs.component.html" />
+    <Content Include="src\app\item-level-dashboards\operational-strategy-items-dashboards\item-tasks\item-tasks.component.html" />
+    <Content Include="src\app\item-level-dashboards\operational-strategy-items-dashboards\project-dashboard.component.html" />
+    <Content Include="src\app\item-level-dashboards\structure-item-dashboard\structure-item-dashboard.component.html" />
+    <Content Include="src\app\item-level-dashboards\theme-dashboard\theme-dashboard.component.html" />
+    <Content Include="src\app\kpi-management\kpi-display-format\display-format.component.css" />
+    <Content Include="src\app\kpi-management\kpi-display-format\display-format.component.html" />
+    <Content Include="src\app\kpi-management\kpi-measure\kpi-measure.component.css" />
+    <Content Include="src\app\kpi-management\kpi-measure\kpi-measure.component.html" />
+    <Content Include="src\app\kpi-management\kpi-metadata\kpi-category\kpi-category.component.html" />
+    <Content Include="src\app\kpi-management\kpi-metadata\indicator-groups\indicator-groups.component.html" />
+    <Content Include="src\app\kpi-management\kpi-metadata\kpi-metadata.component.html" />
+    <Content Include="src\app\kpi-management\kpi-quick-add\kpi-quick-add.component.css" />
+    <Content Include="src\app\kpi-management\kpi-strategy-item-linking\kpi-strategy-item-linking.component.css" />
+    <Content Include="src\app\kpi-management\kpi-strategy-item-linking\kpi-strategy-item-linking.component.html" />
+    <Content Include="src\app\kpi-management\kpi-threshold\kpi-threshold.component.css" />
+    <Content Include="src\app\kpi-management\kpi-threshold\kpi-threshold.component.html" />
+    <Content Include="src\app\kpi-management\manage-benchmarks\manage-benchmarks.component.css" />
+    <Content Include="src\app\kpi-management\manage-benchmarks\manage-benchmarks.component.html" />
+    <Content Include="src\app\kpi-management\manage-kpi.component.css" />
+    <Content Include="src\app\kpi-management\manage-kpi.component.html" />
+    <Content Include="src\app\kpi-management\measure-definition\measure-direct-definition.component.html" />
+    <Content Include="src\app\kpi-management\measure-definition\measure-formula-definition.component.html" />
+    <Content Include="src\app\license-management\license-expired\license-expired.component.html" />
+    <Content Include="src\app\license-management\license-renew\license-renew.component.html" />
+    <Content Include="src\app\administration\maintenance\job-shared-view.html" />
+    <Content Include="src\app\administration\maintenance\jobs\jobs.component.html" />
+    <Content Include="src\app\administration\maintenance\Quartz-Job\quartz-job.component.html" />
+    <Content Include="src\app\administration\maintenance\Quartz-Job\style.css" />
+    <Content Include="src\app\manage-initiatives\pending-initiatives\pending-initiatives-card\pending-initiatives-card.component.css" />
+    <Content Include="src\app\manage-initiatives\pending-initiatives\pending-initiatives-card\pending-initiatives-card.component.html" />
+    <Content Include="src\app\manage-initiatives\pending-initiatives\pending-initiatives.component.css" />
+    <Content Include="src\app\manage-initiatives\pending-initiatives\pending-initiatives.component.html" />
+    <Content Include="src\app\manage-programs\manage-program.component.html" />
+    <Content Include="src\app\manage-projects\manage-project.component.html" />
+    <Content Include="src\app\my-dashboard\items-with-due-children\items-with-due-children.component.css" />
+    <Content Include="src\app\my-dashboard\items-with-due-children\items-with-due-children.component.html" />
+    <Content Include="src\app\my-dashboard\my-dashboard.component.css" />
+    <Content Include="src\app\my-dashboard\strategy-item-workflow-history\strategy-item-workflow-history-card\strategy-item-workflow-history-card.component.css" />
+    <Content Include="src\app\my-dashboard\strategy-item-workflow-history\strategy-item-workflow-history-card\strategy-item-workflow-history-card.component.html" />
+    <Content Include="src\app\my-dashboard\strategy-item-workflow-history\strategy-item-workflow-history-filter\strategy-item-workflow-history-filter.component.css" />
+    <Content Include="src\app\my-dashboard\strategy-item-workflow-history\strategy-item-workflow-history-filter\strategy-item-workflow-history-filter.component.html" />
+    <Content Include="src\app\my-dashboard\strategy-item-workflow-history\strategy-item-workflow-history-popup\strategy-item-workflow-history-popup.component.css" />
+    <Content Include="src\app\my-dashboard\strategy-item-workflow-history\strategy-item-workflow-history-popup\strategy-item-workflow-history-popup.component.html" />
+    <Content Include="src\app\my-dashboard\strategy-item-workflow-history\strategy-item-workflow-history.component.css" />
+    <Content Include="src\app\my-dashboard\strategy-item-workflow-history\strategy-item-workflow-history.component.html" />
+    <Content Include="src\app\notifications\notification-templates\comment-notification.component\comment-notification.component.html" />
+    <Content Include="src\app\notifications\notification-templates\due-strategyitem-children\due-strategyitem-children.component.css" />
+    <Content Include="src\app\notifications\notification-templates\due-strategyitem-children\due-strategyitem-children.component.html" />
+    <Content Include="src\app\notifications\notification-templates\kpi-alert-notification.component\kpi-alert-notification.component.html" />
+    <Content Include="src\app\notifications\notification-templates\rejected-metrics-values-notification.component\rejected-metrics-values-notification.component.html" />
+    <Content Include="src\app\notifications\notification-templates\action-item-notification.component\action-item-notification.component.html" />
+    <Content Include="src\app\notifications\notification-templates\strategy-item-workflow-notification\strategy-item-workflow-notification.component.css" />
+    <Content Include="src\app\notifications\notification-templates\strategy-item-workflow-notification\strategy-item-workflow-notification.component.html" />
+    <Content Include="src\app\notifications\notification-templates\updated-metrics-values-notification.component\updated-metrics-values-notification.component.html" />
+    <Content Include="src\app\manage-initiatives\manage-initiative.component.html" />
+    <Content Include="src\app\manage-kpis\manage-kpis.component.html" />
+    <Content Include="src\app\notifications\notifications.component.html" />
+    <Content Include="src\app\objective-dashboard\objective-scorecard.component.html" />
+    <Content Include="src\app\shared\add-linking-initiatives\add-linking-initiatives.component.css" />
+    <Content Include="src\app\shared\add-linking-initiatives\add-linking-initiatives.component.html" />
+    <Content Include="src\app\shared\errors\generic-error\generic-error.component.html" />
+    <Content Include="src\app\risks\add-edit-risk\add-edit-risk.component.html" />
+    <Content Include="src\app\risks\risks.component.html" />
+    <Content Include="src\app\shared\aligned-to\aligned-to.component.html" />
+    <Content Include="src\app\shared\alert\alert.component.html" />
+    <Content Include="src\app\high-level-dashboards\scorecards\scorecard.component.html" />
+    <Content Include="src\app\high-level-dashboards\perspective-theme-queue-view\perspective-theme-queue-view.component.html" />
+    <Content Include="src\app\shared\data-entry\metric-data-with-dimensions\metric-data-with-dimensions.html" />
+    <Content Include="src\app\shared\dimensions-members-selector\dimensions-members-selector-orderList.component.css" />
+    <Content Include="src\app\shared\dimensions-members-selector\dimensions-members-selector-orderList.component.html" />
+    <Content Include="src\app\shared\general-filter\general-filter.component.html" />
+    <Content Include="src\app\shared\item-cards\initiative-header\initiative-header.component.html" />
+    <Content Include="src\app\shared\item-cards\program-card\program-card.component.html" />
+    <Content Include="src\app\shared\item-cards\project-card\project-card.component.html" />
+    <Content Include="src\app\shared\item-descriptor\item-descriptor.component.html" />
+    <Content Include="src\app\shared\item-info\item-info.component.css" />
+    <Content Include="src\app\shared\item-info\item-info.component.html" />
+    <Content Include="src\app\shared\item-list\initiative-objective-list\initiative-objective-list.component.html" />
+    <Content Include="src\app\shared\item-list\kpi-objective-list\kpi-objective-list.component.html" />
+    <Content Include="src\app\shared\item-list\program-list\program-list.component.html" />
+    <Content Include="src\app\shared\item-list\project-list\project-list.component.html" />
+    <Content Include="src\app\shared\item-tag\item-tag.component.css" />
+    <Content Include="src\app\shared\item-tag\item-tag.component.html" />
+    <Content Include="src\app\shared\loader\loader.component.html" />
+    <Content Include="src\app\shared\manage-strategy-item-metrics\manage-strategy-item-metrics.component.css" />
+    <Content Include="src\app\shared\manage-strategy-item-metrics\manage-strategy-item-metrics.component.html" />
+    <Content Include="src\app\items-management\initiative\update-tracking\update-tracking.component.html" />
+    <Content Include="src\app\shared\collaboration\action-items\action-items.component.html" />
+    <Content Include="src\app\shared\collaboration\action-items\manage-action-item\manage-action-item.component.html" />
+    <Content Include="src\app\shared\collaboration\related-documents\related-documents.component.html" />
+    <Content Include="src\app\shared\collaboration\social-comments\social-comments.component.html" />
+    <Content Include="src\app\shared\dimensions-members-selector\dimensions-members-selector.component.css" />
+    <Content Include="src\app\shared\dimensions-members-selector\dimensions-members-selector.component.html" />
+    <Content Include="src\app\shared\nav-tabs\nav-tabs.component.css" />
+    <Content Include="src\app\shared\nav-tabs\nav-tabs.component.html" />
+    <Content Include="src\app\shared\no-data\no-data.component.css" />
+    <Content Include="src\app\shared\no-data\no-data.component.html" />
+    <Content Include="src\app\shared\objective-scorecard-tabular\objective-scorecard-tabular.component.html" />
+    <Content Include="src\app\shared\pending-strategy-items-filter\pending-strategy-items-filter.component.css" />
+    <Content Include="src\app\shared\pending-strategy-items-filter\pending-strategy-items-filter.component.html" />
+    <Content Include="src\app\shared\people-picker\people-picker.component.html" />
+    <Content Include="src\app\shared\search-metric\search-metric.component.css" />
+    <Content Include="src\app\shared\search-metric\search-metric.component.html" />
+    <Content Include="src\app\shared\search-strategy-item\search-strategy-item.component.html" />
+    <Content Include="src\app\shared\supporting-documents\supporting-documents.component.css" />
+    <Content Include="src\app\shared\supporting-documents\supporting-documents.component.html" />
+    <Content Include="src\app\shared\time-filter-multiselect\time-filter-multiselect.component.html" />
+    <Content Include="src\app\strategy-item\add-linking-strategy-items\add-linking-strategy-items.component.css" />
+    <Content Include="src\app\strategy-item\add-linking-strategy-items\add-linking-strategy-items.component.html" />
+    <Content Include="src\app\strategy-item\contributing-items\contributing-items.component.css" />
+    <Content Include="src\app\strategy-item\contributing-items\contributing-items.component.html" />
+    <Content Include="src\app\strategy-item\contribution-source\contribution-source.component.css" />
+    <Content Include="src\app\strategy-item\contribution-source\contribution-source.component.html" />
+    <Content Include="src\app\strategy-item\default-metadata\default-metadata.component.css" />
+    <Content Include="src\app\strategy-item\default-metadata\default-metadata.component.html" />
+    <Content Include="src\app\shared\custom-dimension\custom-dimension.component.html" />
+    <Content Include="src\app\strategy-item\epm-integration\epm-integration.component.css" />
+    <Content Include="src\app\strategy-item\epm-integration\epm-integration.component.html" />
+    <Content Include="src\app\strategy-item\linked-issues\linked-issues.component.css" />
+    <Content Include="src\app\strategy-item\linked-issues\linked-issues.component.html" />
+    <Content Include="src\app\strategy-item\linked-milestones\linked-milestones.component.css" />
+    <Content Include="src\app\strategy-item\linked-milestones\linked-milestones.component.html" />
+    <Content Include="src\app\strategy-item\linked-milestones\manage-linked-milestones\manage-linked-milestones.component.css" />
+    <Content Include="src\app\strategy-item\linked-milestones\manage-linked-milestones\manage-linked-milestones.component.html" />
+    <Content Include="src\app\strategy-item\linked-outputs\linked-outputs.component.css" />
+    <Content Include="src\app\strategy-item\linked-outputs\linked-outputs.component.html" />
+    <Content Include="src\app\strategy-item\linked-outputs\manage-linked-output\manage-linked-output.component.css" />
+    <Content Include="src\app\strategy-item\linked-outputs\manage-linked-output\manage-linked-output.component.html" />
+    <Content Include="src\app\strategy-item\linked-risks\linked-risks.component.css" />
+    <Content Include="src\app\strategy-item\linked-risks\linked-risks.component.html" />
+    <Content Include="src\app\strategy-item\linked-strategy-items\linked-strategy-items.component.css" />
+    <Content Include="src\app\strategy-item\linked-strategy-items\linked-strategy-items.component.html" />
+    <Content Include="src\app\strategy-item\linked-tasks-milestones\linked-tasks-milestones.component.css" />
+    <Content Include="src\app\strategy-item\linked-tasks-milestones\linked-tasks-milestones.component.html" />
+    <Content Include="src\app\strategy-item\linking-initiatives\linking-initiatives.component.css" />
+    <Content Include="src\app\strategy-item\linking-initiatives\linking-initiatives.component.html" />
+    <Content Include="src\app\strategy-item\linking-kpis\add-linking-kpis\add-linking-kpis.component.css" />
+    <Content Include="src\app\strategy-item\linking-kpis\add-linking-kpis\add-linking-kpis.component.html" />
+    <Content Include="src\app\strategy-item\linking-kpis\linking-kpis.component.css" />
+    <Content Include="src\app\strategy-item\linking-kpis\linking-kpis.component.html" />
+    <Content Include="src\app\strategy-item\metadata\metadata.component.css" />
+    <Content Include="src\app\strategy-item\metadata\metadata.component.html" />
+    <Content Include="src\app\strategy-item\metric\metric.component.css" />
+    <Content Include="src\app\strategy-item\metric\metric.component.html" />
+    <Content Include="src\app\strategy-item\quick-add\quick-add.component.html" />
+    <Content Include="src\app\strategy-item\strategy-item-parent\strategy-item-parent.component.html" />
+    <Content Include="src\app\strategy-item\strategy-item.component.css" />
+    <Content Include="src\app\strategy-item\strategy-item.component.html" />
+    <Content Include="src\app\shared\collaboration\related-links\related-links.component.html" />
+    <Content Include="src\app\strategy-item\strategy-plan-tree\strategy-plan-tree.component.css" />
+    <Content Include="src\app\strategy-item\strategy-plan-tree\strategy-plan-tree.component.html" />
+    <Content Include="src\app\strategy-item\strategy-planning\strategy-planning.component.css" />
+    <Content Include="src\app\strategy-item\strategy-planning\strategy-planning.component.html" />
+    <Content Include="src\app\strategy-item\linked-tasks-milestones\manage-tasks-milestones\manage-tasks-milestones.component.css" />
+    <Content Include="src\app\strategy-item\linked-tasks-milestones\manage-tasks-milestones\manage-tasks-milestones.component.html" />
+    <Content Include="src\app\strategy-item\tree-linking\tree-linking.component.css" />
+    <Content Include="src\app\strategy-item\tree-linking\tree-linking.component.html" />
+    <Content Include="src\app\strategy-map\strategy-map-dashboard\strategy-map-dashboard.component.css" />
+    <Content Include="src\app\strategy-map\strategy-map-dashboard\strategy-map-dashboard.component.html" />
+    <Content Include="src\app\strategy-map\strategy-map-items-selector\strategy-map-items-selector.component.html" />
+    <Content Include="src\assets\fonts\DinNextArabic\DINNextLTArabic-Light.svg" />
+    <Content Include="src\assets\fonts\DinNextArabic\DINNextLTArabic-Medium.svg" />
+    <Content Include="src\assets\fonts\DinNextArabic\DINNextLTArabic-Regular.svg" />
+    <Content Include="src\assets\fonts\Glyphter\Glyphter.svg" />
+    <Content Include="src\app\strategy-map\manage-strategy-map.component.html" />
+    <Content Include="src\assets\fonts\ontrack\fonts\ontrack.svg" />
+    <Content Include="src\assets\fonts\ontrack\styles.css" />
+    <Content Include="src\assets\GetOrgChart\getorgchart-min.js" />
+    <Content Include="src\assets\GetOrgChart\getorgchart-source.js" />
+    <Content Include="src\assets\GetOrgChart\getorgchart.css" />
+    <Content Include="src\assets\GetOrgChart\getorgchart.js" />
+    <Content Include="src\assets\GetOrgChart\graphics.png" />
+    <Content Include="src\assets\img\icons\actual-planned-icons.png" />
+    <Content Include="src\assets\img\icons\customSelectArrows.svg" />
+    <Content Include="src\assets\img\icons\dark-gray-create.png" />
+    <Content Include="src\assets\img\icons\fileformats-icons.png" />
+    <Content Include="src\assets\img\icons\fileformats-sm.png" />
+    <Content Include="src\assets\img\icons\Intiative-chart.png" />
+    <Content Include="src\assets\img\icons\Loading_icon.gif" />
+    <Content Include="src\assets\img\icons\Logo-ar.png" />
+    <Content Include="src\assets\img\icons\nodata-group.png" />
+    <Content Include="src\assets\img\icons\notifications\Confimration.png" />
+    <Content Include="src\assets\img\icons\notifications\Confimration.svg" />
+    <Content Include="src\assets\img\icons\notifications\error.png" />
+    <Content Include="src\assets\img\icons\notifications\error.svg" />
+    <Content Include="src\assets\img\icons\notifications\notification.svg" />
+    <Content Include="src\assets\img\icons\notifications\Warning.png" />
+    <Content Include="src\assets\img\icons\notifications\Warning.svg" />
+    <Content Include="src\assets\img\icons\onTrackIcoColor.ico" />
+    <Content Include="src\assets\img\icons\orintaion-icons-sprite.png" />
+    <Content Include="src\assets\img\icons\perspective-white-icon.png" />
+    <Content Include="src\assets\img\icons\planning-initiative-icon.png" />
+    <Content Include="src\assets\img\icons\planning-kpi-icon.png" />
+    <Content Include="src\assets\img\icons\planning-objective-icon.png" />
+    <Content Include="src\assets\img\icons\planning-program-icon.png" />
+    <Content Include="src\assets\img\icons\planning-project-icon.png" />
+    <Content Include="src\assets\img\icons\planning-theme-icon.png" />
+    <Content Include="src\assets\img\icons\tagIco.png" />
+    <Content Include="src\assets\img\icons\timeline\error %281%29.png" />
+    <Content Include="src\assets\img\icons\timeline\history.png" />
+    <Content Include="src\assets\img\icons\timeline\maps-and-flags %281%29.png" />
+    <Content Include="src\assets\img\icons\timeline\send %281%29.png" />
+    <Content Include="src\assets\img\icons\verified.png" />
+    <Content Include="src\assets\img\loader.gif" />
+    <Content Include="src\assets\img\login\emailIco.png" />
+    <Content Include="src\assets\img\login\loginBG--.jpg" />
+    <Content Include="src\assets\img\login\loginBG-old.jpg" />
+    <Content Include="src\assets\img\login\loginBG.jpg" />
+    <Content Include="src\assets\img\login\loginIco.jpg" />
+    <Content Include="src\assets\img\login\logo.png" />
+    <Content Include="src\assets\img\ManageStrategyMap\delete.png" />
+    <Content Include="src\assets\img\no-image.png" />
+    <Content Include="src\assets\jquery.mCustomScrollbar.concat.min.js" />
+    <Content Include="src\assets\scripts\cron\cron-script.js" />
+    <Content Include="src\assets\scripts\cron\jquery-cron-min.js" />
+    <Content Include="src\assets\scripts\cron\jquery-cron.js" />
+    <Content Include="src\assets\scripts\gentleSelect\jquery-gentleSelect-min.js" />
+    <Content Include="src\assets\scripts\gentleSelect\jquery-gentleSelect.js" />
+    <Content Include="src\assets\scripts\libs\alertify\css\alertify.css" />
+    <Content Include="src\assets\scripts\libs\alertify\js\alertify.js" />
+    <Content Include="src\assets\scripts\libs\bootstrap.min.js" />
+    <Content Include="src\assets\scripts\libs\ckeditor\adapters\jquery.js" />
+    <Content Include="src\assets\scripts\libs\ckeditor\build-config.js" />
+    <Content Include="src\assets\scripts\libs\ckeditor\ckeditor.js" />
+    <Content Include="src\assets\scripts\libs\ckeditor\config.js" />
+    <Content Include="src\assets\scripts\libs\ckeditor\contents.css" />
+    <Content Include="src\assets\scripts\libs\ckeditor\lang\af.js" />
+    <Content Include="src\assets\scripts\libs\ckeditor\lang\ar.js" />
+    <Content Include="src\assets\scripts\libs\ckeditor\lang\az.js" />
+    <Content Include="src\assets\scripts\libs\ckeditor\lang\bg.js" />
+    <Content Include="src\assets\scripts\libs\ckeditor\lang\bn.js" />
+    <Content Include="src\assets\scripts\libs\ckeditor\lang\bs.js" />
+    <Content Include="src\assets\scripts\libs\ckeditor\lang\ca.js" />
+    <Content Include="src\assets\scripts\libs\ckeditor\lang\cs.js" />
+    <Content Include="src\assets\scripts\libs\ckeditor\lang\cy.js" />
+    <Content Include="src\assets\scripts\libs\ckeditor\lang\da.js" />
+    <Content Include="src\assets\scripts\libs\ckeditor\lang\de-ch.js" />
+    <Content Include="src\assets\scripts\libs\ckeditor\lang\de.js" />
+    <Content Include="src\assets\scripts\libs\ckeditor\lang\el.js" />
+    <Content Include="src\assets\scripts\libs\ckeditor\lang\en-au.js" />
+    <Content Include="src\assets\scripts\libs\ckeditor\lang\en-ca.js" />
+    <Content Include="src\assets\scripts\libs\ckeditor\lang\en-gb.js" />
+    <Content Include="src\assets\scripts\libs\ckeditor\lang\en.js" />
+    <Content Include="src\assets\scripts\libs\ckeditor\lang\eo.js" />
+    <Content Include="src\assets\scripts\libs\ckeditor\lang\es.js" />
+    <Content Include="src\assets\scripts\libs\ckeditor\lang\et.js" />
+    <Content Include="src\assets\scripts\libs\ckeditor\lang\eu.js" />
+    <Content Include="src\assets\scripts\libs\ckeditor\lang\fa.js" />
+    <Content Include="src\assets\scripts\libs\ckeditor\lang\fi.js" />
+    <Content Include="src\assets\scripts\libs\ckeditor\lang\fo.js" />
+    <Content Include="src\assets\scripts\libs\ckeditor\lang\fr-ca.js" />
+    <Content Include="src\assets\scripts\libs\ckeditor\lang\fr.js" />
+    <Content Include="src\assets\scripts\libs\ckeditor\lang\gl.js" />
+    <Content Include="src\assets\scripts\libs\ckeditor\lang\gu.js" />
+    <Content Include="src\assets\scripts\libs\ckeditor\lang\he.js" />
+    <Content Include="src\assets\scripts\libs\ckeditor\lang\hi.js" />
+    <Content Include="src\assets\scripts\libs\ckeditor\lang\hr.js" />
+    <Content Include="src\assets\scripts\libs\ckeditor\lang\hu.js" />
+    <Content Include="src\assets\scripts\libs\ckeditor\lang\id.js" />
+    <Content Include="src\assets\scripts\libs\ckeditor\lang\is.js" />
+    <Content Include="src\assets\scripts\libs\ckeditor\lang\it.js" />
+    <Content Include="src\assets\scripts\libs\ckeditor\lang\ja.js" />
+    <Content Include="src\assets\scripts\libs\ckeditor\lang\ka.js" />
+    <Content Include="src\assets\scripts\libs\ckeditor\lang\km.js" />
+    <Content Include="src\assets\scripts\libs\ckeditor\lang\ko.js" />
+    <Content Include="src\assets\scripts\libs\ckeditor\lang\ku.js" />
+    <Content Include="src\assets\scripts\libs\ckeditor\lang\lt.js" />
+    <Content Include="src\assets\scripts\libs\ckeditor\lang\lv.js" />
+    <Content Include="src\assets\scripts\libs\ckeditor\lang\mk.js" />
+    <Content Include="src\assets\scripts\libs\ckeditor\lang\mn.js" />
+    <Content Include="src\assets\scripts\libs\ckeditor\lang\ms.js" />
+    <Content Include="src\assets\scripts\libs\ckeditor\lang\nb.js" />
+    <Content Include="src\assets\scripts\libs\ckeditor\lang\nl.js" />
+    <Content Include="src\assets\scripts\libs\ckeditor\lang\no.js" />
+    <Content Include="src\assets\scripts\libs\ckeditor\lang\oc.js" />
+    <Content Include="src\assets\scripts\libs\ckeditor\lang\pl.js" />
+    <Content Include="src\assets\scripts\libs\ckeditor\lang\pt-br.js" />
+    <Content Include="src\assets\scripts\libs\ckeditor\lang\pt.js" />
+    <Content Include="src\assets\scripts\libs\ckeditor\lang\ro.js" />
+    <Content Include="src\assets\scripts\libs\ckeditor\lang\ru.js" />
+    <Content Include="src\assets\scripts\libs\ckeditor\lang\si.js" />
+    <Content Include="src\assets\scripts\libs\ckeditor\lang\sk.js" />
+    <Content Include="src\assets\scripts\libs\ckeditor\lang\sl.js" />
+    <Content Include="src\assets\scripts\libs\ckeditor\lang\sq.js" />
+    <Content Include="src\assets\scripts\libs\ckeditor\lang\sr-latn.js" />
+    <Content Include="src\assets\scripts\libs\ckeditor\lang\sr.js" />
+    <Content Include="src\assets\scripts\libs\ckeditor\lang\sv.js" />
+    <Content Include="src\assets\scripts\libs\ckeditor\lang\th.js" />
+    <Content Include="src\assets\scripts\libs\ckeditor\lang\tr.js" />
+    <Content Include="src\assets\scripts\libs\ckeditor\lang\tt.js" />
+    <Content Include="src\assets\scripts\libs\ckeditor\lang\ug.js" />
+    <Content Include="src\assets\scripts\libs\ckeditor\lang\uk.js" />
+    <Content Include="src\assets\scripts\libs\ckeditor\lang\vi.js" />
+    <Content Include="src\assets\scripts\libs\ckeditor\lang\zh-cn.js" />
+    <Content Include="src\assets\scripts\libs\ckeditor\lang\zh.js" />
+    <Content Include="src\assets\scripts\libs\ckeditor\plugins\a11yhelp\dialogs\a11yhelp.js" />
+    <Content Include="src\assets\scripts\libs\ckeditor\plugins\a11yhelp\dialogs\lang\af.js" />
+    <Content Include="src\assets\scripts\libs\ckeditor\plugins\a11yhelp\dialogs\lang\ar.js" />
+    <Content Include="src\assets\scripts\libs\ckeditor\plugins\a11yhelp\dialogs\lang\az.js" />
+    <Content Include="src\assets\scripts\libs\ckeditor\plugins\a11yhelp\dialogs\lang\bg.js" />
+    <Content Include="src\assets\scripts\libs\ckeditor\plugins\a11yhelp\dialogs\lang\ca.js" />
+    <Content Include="src\assets\scripts\libs\ckeditor\plugins\a11yhelp\dialogs\lang\cs.js" />
+    <Content Include="src\assets\scripts\libs\ckeditor\plugins\a11yhelp\dialogs\lang\cy.js" />
+    <Content Include="src\assets\scripts\libs\ckeditor\plugins\a11yhelp\dialogs\lang\da.js" />
+    <Content Include="src\assets\scripts\libs\ckeditor\plugins\a11yhelp\dialogs\lang\de-ch.js" />
+    <Content Include="src\assets\scripts\libs\ckeditor\plugins\a11yhelp\dialogs\lang\de.js" />
+    <Content Include="src\assets\scripts\libs\ckeditor\plugins\a11yhelp\dialogs\lang\el.js" />
+    <Content Include="src\assets\scripts\libs\ckeditor\plugins\a11yhelp\dialogs\lang\en-gb.js" />
+    <Content Include="src\assets\scripts\libs\ckeditor\plugins\a11yhelp\dialogs\lang\en.js" />
+    <Content Include="src\assets\scripts\libs\ckeditor\plugins\a11yhelp\dialogs\lang\eo.js" />
+    <Content Include="src\assets\scripts\libs\ckeditor\plugins\a11yhelp\dialogs\lang\es.js" />
+    <Content Include="src\assets\scripts\libs\ckeditor\plugins\a11yhelp\dialogs\lang\et.js" />
+    <Content Include="src\assets\scripts\libs\ckeditor\plugins\a11yhelp\dialogs\lang\eu.js" />
+    <Content Include="src\assets\scripts\libs\ckeditor\plugins\a11yhelp\dialogs\lang\fa.js" />
+    <Content Include="src\assets\scripts\libs\ckeditor\plugins\a11yhelp\dialogs\lang\fi.js" />
+    <Content Include="src\assets\scripts\libs\ckeditor\plugins\a11yhelp\dialogs\lang\fo.js" />
+    <Content Include="src\assets\scripts\libs\ckeditor\plugins\a11yhelp\dialogs\lang\fr-ca.js" />
+    <Content Include="src\assets\scripts\libs\ckeditor\plugins\a11yhelp\dialogs\lang\fr.js" />
+    <Content Include="src\assets\scripts\libs\ckeditor\plugins\a11yhelp\dialogs\lang\gl.js" />
+    <Content Include="src\assets\scripts\libs\ckeditor\plugins\a11yhelp\dialogs\lang\gu.js" />
+    <Content Include="src\assets\scripts\libs\ckeditor\plugins\a11yhelp\dialogs\lang\he.js" />
+    <Content Include="src\assets\scripts\libs\ckeditor\plugins\a11yhelp\dialogs\lang\hi.js" />
+    <Content Include="src\assets\scripts\libs\ckeditor\plugins\a11yhelp\dialogs\lang\hr.js" />
+    <Content Include="src\assets\scripts\libs\ckeditor\plugins\a11yhelp\dialogs\lang\hu.js" />
+    <Content Include="src\assets\scripts\libs\ckeditor\plugins\a11yhelp\dialogs\lang\id.js" />
+    <Content Include="src\assets\scripts\libs\ckeditor\plugins\a11yhelp\dialogs\lang\it.js" />
+    <Content Include="src\assets\scripts\libs\ckeditor\plugins\a11yhelp\dialogs\lang\ja.js" />
+    <Content Include="src\assets\scripts\libs\ckeditor\plugins\a11yhelp\dialogs\lang\km.js" />
+    <Content Include="src\assets\scripts\libs\ckeditor\plugins\a11yhelp\dialogs\lang\ko.js" />
+    <Content Include="src\assets\scripts\libs\ckeditor\plugins\a11yhelp\dialogs\lang\ku.js" />
+    <Content Include="src\assets\scripts\libs\ckeditor\plugins\a11yhelp\dialogs\lang\lt.js" />
+    <Content Include="src\assets\scripts\libs\ckeditor\plugins\a11yhelp\dialogs\lang\lv.js" />
+    <Content Include="src\assets\scripts\libs\ckeditor\plugins\a11yhelp\dialogs\lang\mk.js" />
+    <Content Include="src\assets\scripts\libs\ckeditor\plugins\a11yhelp\dialogs\lang\mn.js" />
+    <Content Include="src\assets\scripts\libs\ckeditor\plugins\a11yhelp\dialogs\lang\nb.js" />
+    <Content Include="src\assets\scripts\libs\ckeditor\plugins\a11yhelp\dialogs\lang\nl.js" />
+    <Content Include="src\assets\scripts\libs\ckeditor\plugins\a11yhelp\dialogs\lang\no.js" />
+    <Content Include="src\assets\scripts\libs\ckeditor\plugins\a11yhelp\dialogs\lang\oc.js" />
+    <Content Include="src\assets\scripts\libs\ckeditor\plugins\a11yhelp\dialogs\lang\pl.js" />
+    <Content Include="src\assets\scripts\libs\ckeditor\plugins\a11yhelp\dialogs\lang\pt-br.js" />
+    <Content Include="src\assets\scripts\libs\ckeditor\plugins\a11yhelp\dialogs\lang\pt.js" />
+    <Content Include="src\assets\scripts\libs\ckeditor\plugins\a11yhelp\dialogs\lang\ro.js" />
+    <Content Include="src\assets\scripts\libs\ckeditor\plugins\a11yhelp\dialogs\lang\ru.js" />
+    <Content Include="src\assets\scripts\libs\ckeditor\plugins\a11yhelp\dialogs\lang\si.js" />
+    <Content Include="src\assets\scripts\libs\ckeditor\plugins\a11yhelp\dialogs\lang\sk.js" />
+    <Content Include="src\assets\scripts\libs\ckeditor\plugins\a11yhelp\dialogs\lang\sl.js" />
+    <Content Include="src\assets\scripts\libs\ckeditor\plugins\a11yhelp\dialogs\lang\sq.js" />
+    <Content Include="src\assets\scripts\libs\ckeditor\plugins\a11yhelp\dialogs\lang\sr-latn.js" />
+    <Content Include="src\assets\scripts\libs\ckeditor\plugins\a11yhelp\dialogs\lang\sr.js" />
+    <Content Include="src\assets\scripts\libs\ckeditor\plugins\a11yhelp\dialogs\lang\sv.js" />
+    <Content Include="src\assets\scripts\libs\ckeditor\plugins\a11yhelp\dialogs\lang\th.js" />
+    <Content Include="src\assets\scripts\libs\ckeditor\plugins\a11yhelp\dialogs\lang\tr.js" />
+    <Content Include="src\assets\scripts\libs\ckeditor\plugins\a11yhelp\dialogs\lang\tt.js" />
+    <Content Include="src\assets\scripts\libs\ckeditor\plugins\a11yhelp\dialogs\lang\ug.js" />
+    <Content Include="src\assets\scripts\libs\ckeditor\plugins\a11yhelp\dialogs\lang\uk.js" />
+    <Content Include="src\assets\scripts\libs\ckeditor\plugins\a11yhelp\dialogs\lang\vi.js" />
+    <Content Include="src\assets\scripts\libs\ckeditor\plugins\a11yhelp\dialogs\lang\zh-cn.js" />
+    <Content Include="src\assets\scripts\libs\ckeditor\plugins\a11yhelp\dialogs\lang\zh.js" />
+    <Content Include="src\assets\scripts\libs\ckeditor\plugins\a11yhelp\dialogs\lang\_translationstatus.txt" />
+    <Content Include="src\assets\scripts\libs\ckeditor\plugins\about\dialogs\about.js" />
+    <Content Include="src\assets\scripts\libs\ckeditor\plugins\about\dialogs\hidpi\logo_ckeditor.png" />
+    <Content Include="src\assets\scripts\libs\ckeditor\plugins\about\dialogs\logo_ckeditor.png" />
+    <Content Include="src\assets\scripts\libs\ckeditor\plugins\colordialog\dialogs\colordialog.css" />
+    <Content Include="src\assets\scripts\libs\ckeditor\plugins\colordialog\dialogs\colordialog.js" />
+    <Content Include="src\assets\scripts\libs\ckeditor\plugins\copyformatting\cursors\cursor-disabled.svg" />
+    <Content Include="src\assets\scripts\libs\ckeditor\plugins\copyformatting\cursors\cursor.svg" />
+    <Content Include="src\assets\scripts\libs\ckeditor\plugins\copyformatting\styles\copyformatting.css" />
+    <Content Include="src\assets\scripts\libs\ckeditor\plugins\dialog\dialogDefinition.js" />
+    <Content Include="src\assets\scripts\libs\ckeditor\plugins\div\dialogs\div.js" />
+    <Content Include="src\assets\scripts\libs\ckeditor\plugins\find\dialogs\find.js" />
+    <Content Include="src\assets\scripts\libs\ckeditor\plugins\flash\dialogs\flash.js" />
+    <Content Include="src\assets\scripts\libs\ckeditor\plugins\flash\images\placeholder.png" />
+    <Content Include="src\assets\scripts\libs\ckeditor\plugins\forms\dialogs\button.js" />
+    <Content Include="src\assets\scripts\libs\ckeditor\plugins\forms\dialogs\checkbox.js" />
+    <Content Include="src\assets\scripts\libs\ckeditor\plugins\forms\dialogs\form.js" />
+    <Content Include="src\assets\scripts\libs\ckeditor\plugins\forms\dialogs\hiddenfield.js" />
+    <Content Include="src\assets\scripts\libs\ckeditor\plugins\forms\dialogs\radio.js" />
+    <Content Include="src\assets\scripts\libs\ckeditor\plugins\forms\dialogs\select.js" />
+    <Content Include="src\assets\scripts\libs\ckeditor\plugins\forms\dialogs\textarea.js" />
+    <Content Include="src\assets\scripts\libs\ckeditor\plugins\forms\dialogs\textfield.js" />
+    <Content Include="src\assets\scripts\libs\ckeditor\plugins\forms\images\hiddenfield.gif" />
+    <Content Include="src\assets\scripts\libs\ckeditor\plugins\icons.png" />
+    <Content Include="src\assets\scripts\libs\ckeditor\plugins\icons_hidpi.png" />
+    <Content Include="src\assets\scripts\libs\ckeditor\plugins\iframe\dialogs\iframe.js" />
+    <Content Include="src\assets\scripts\libs\ckeditor\plugins\iframe\images\placeholder.png" />
+    <Content Include="src\assets\scripts\libs\ckeditor\plugins\image\dialogs\image.js" />
+    <Content Include="src\assets\scripts\libs\ckeditor\plugins\image\images\noimage.png" />
+    <Content Include="src\assets\scripts\libs\ckeditor\plugins\link\dialogs\anchor.js" />
+    <Content Include="src\assets\scripts\libs\ckeditor\plugins\link\dialogs\link.js" />
+    <Content Include="src\assets\scripts\libs\ckeditor\plugins\link\images\anchor.png" />
+    <Content Include="src\assets\scripts\libs\ckeditor\plugins\link\images\hidpi\anchor.png" />
+    <Content Include="src\assets\scripts\libs\ckeditor\plugins\liststyle\dialogs\liststyle.js" />
+    <Content Include="src\assets\scripts\libs\ckeditor\plugins\magicline\images\hidpi\icon-rtl.png" />
+    <Content Include="src\assets\scripts\libs\ckeditor\plugins\magicline\images\hidpi\icon.png" />
+    <Content Include="src\assets\scripts\libs\ckeditor\plugins\magicline\images\icon-rtl.png" />
+    <Content Include="src\assets\scripts\libs\ckeditor\plugins\magicline\images\icon.png" />
+    <Content Include="src\assets\scripts\libs\ckeditor\plugins\pagebreak\images\pagebreak.gif" />
+    <Content Include="src\assets\scripts\libs\ckeditor\plugins\pastefromword\filter\default.js" />
+    <Content Include="src\assets\scripts\libs\ckeditor\plugins\preview\preview.html" />
+    <Content Include="src\assets\scripts\libs\ckeditor\plugins\scayt\dialogs\dialog.css" />
+    <Content Include="src\assets\scripts\libs\ckeditor\plugins\scayt\dialogs\options.js" />
+    <Content Include="src\assets\scripts\libs\ckeditor\plugins\scayt\dialogs\toolbar.css" />
+    <Content Include="src\assets\scripts\libs\ckeditor\plugins\scayt\skins\moono-lisa\scayt.css" />
+    <Content Include="src\assets\scripts\libs\ckeditor\plugins\showblocks\images\block_address.png" />
+    <Content Include="src\assets\scripts\libs\ckeditor\plugins\showblocks\images\block_blockquote.png" />
+    <Content Include="src\assets\scripts\libs\ckeditor\plugins\showblocks\images\block_div.png" />
+    <Content Include="src\assets\scripts\libs\ckeditor\plugins\showblocks\images\block_h1.png" />
+    <Content Include="src\assets\scripts\libs\ckeditor\plugins\showblocks\images\block_h2.png" />
+    <Content Include="src\assets\scripts\libs\ckeditor\plugins\showblocks\images\block_h3.png" />
+    <Content Include="src\assets\scripts\libs\ckeditor\plugins\showblocks\images\block_h4.png" />
+    <Content Include="src\assets\scripts\libs\ckeditor\plugins\showblocks\images\block_h5.png" />
+    <Content Include="src\assets\scripts\libs\ckeditor\plugins\showblocks\images\block_h6.png" />
+    <Content Include="src\assets\scripts\libs\ckeditor\plugins\showblocks\images\block_p.png" />
+    <Content Include="src\assets\scripts\libs\ckeditor\plugins\showblocks\images\block_pre.png" />
+    <Content Include="src\assets\scripts\libs\ckeditor\plugins\smiley\dialogs\smiley.js" />
+    <Content Include="src\assets\scripts\libs\ckeditor\plugins\smiley\images\angel_smile.gif" />
+    <Content Include="src\assets\scripts\libs\ckeditor\plugins\smiley\images\angel_smile.png" />
+    <Content Include="src\assets\scripts\libs\ckeditor\plugins\smiley\images\angry_smile.gif" />
+    <Content Include="src\assets\scripts\libs\ckeditor\plugins\smiley\images\angry_smile.png" />
+    <Content Include="src\assets\scripts\libs\ckeditor\plugins\smiley\images\broken_heart.gif" />
+    <Content Include="src\assets\scripts\libs\ckeditor\plugins\smiley\images\broken_heart.png" />
+    <Content Include="src\assets\scripts\libs\ckeditor\plugins\smiley\images\confused_smile.gif" />
+    <Content Include="src\assets\scripts\libs\ckeditor\plugins\smiley\images\confused_smile.png" />
+    <Content Include="src\assets\scripts\libs\ckeditor\plugins\smiley\images\cry_smile.gif" />
+    <Content Include="src\assets\scripts\libs\ckeditor\plugins\smiley\images\cry_smile.png" />
+    <Content Include="src\assets\scripts\libs\ckeditor\plugins\smiley\images\devil_smile.gif" />
+    <Content Include="src\assets\scripts\libs\ckeditor\plugins\smiley\images\devil_smile.png" />
+    <Content Include="src\assets\scripts\libs\ckeditor\plugins\smiley\images\embaressed_smile.gif" />
+    <Content Include="src\assets\scripts\libs\ckeditor\plugins\smiley\images\embarrassed_smile.gif" />
+    <Content Include="src\assets\scripts\libs\ckeditor\plugins\smiley\images\embarrassed_smile.png" />
+    <Content Include="src\assets\scripts\libs\ckeditor\plugins\smiley\images\envelope.gif" />
+    <Content Include="src\assets\scripts\libs\ckeditor\plugins\smiley\images\envelope.png" />
+    <Content Include="src\assets\scripts\libs\ckeditor\plugins\smiley\images\heart.gif" />
+    <Content Include="src\assets\scripts\libs\ckeditor\plugins\smiley\images\heart.png" />
+    <Content Include="src\assets\scripts\libs\ckeditor\plugins\smiley\images\kiss.gif" />
+    <Content Include="src\assets\scripts\libs\ckeditor\plugins\smiley\images\kiss.png" />
+    <Content Include="src\assets\scripts\libs\ckeditor\plugins\smiley\images\lightbulb.gif" />
+    <Content Include="src\assets\scripts\libs\ckeditor\plugins\smiley\images\lightbulb.png" />
+    <Content Include="src\assets\scripts\libs\ckeditor\plugins\smiley\images\omg_smile.gif" />
+    <Content Include="src\assets\scripts\libs\ckeditor\plugins\smiley\images\omg_smile.png" />
+    <Content Include="src\assets\scripts\libs\ckeditor\plugins\smiley\images\regular_smile.gif" />
+    <Content Include="src\assets\scripts\libs\ckeditor\plugins\smiley\images\regular_smile.png" />
+    <Content Include="src\assets\scripts\libs\ckeditor\plugins\smiley\images\sad_smile.gif" />
+    <Content Include="src\assets\scripts\libs\ckeditor\plugins\smiley\images\sad_smile.png" />
+    <Content Include="src\assets\scripts\libs\ckeditor\plugins\smiley\images\shades_smile.gif" />
+    <Content Include="src\assets\scripts\libs\ckeditor\plugins\smiley\images\shades_smile.png" />
+    <Content Include="src\assets\scripts\libs\ckeditor\plugins\smiley\images\teeth_smile.gif" />
+    <Content Include="src\assets\scripts\libs\ckeditor\plugins\smiley\images\teeth_smile.png" />
+    <Content Include="src\assets\scripts\libs\ckeditor\plugins\smiley\images\thumbs_down.gif" />
+    <Content Include="src\assets\scripts\libs\ckeditor\plugins\smiley\images\thumbs_down.png" />
+    <Content Include="src\assets\scripts\libs\ckeditor\plugins\smiley\images\thumbs_up.gif" />
+    <Content Include="src\assets\scripts\libs\ckeditor\plugins\smiley\images\thumbs_up.png" />
+    <Content Include="src\assets\scripts\libs\ckeditor\plugins\smiley\images\tongue_smile.gif" />
+    <Content Include="src\assets\scripts\libs\ckeditor\plugins\smiley\images\tongue_smile.png" />
+    <Content Include="src\assets\scripts\libs\ckeditor\plugins\smiley\images\tounge_smile.gif" />
+    <Content Include="src\assets\scripts\libs\ckeditor\plugins\smiley\images\whatchutalkingabout_smile.gif" />
+    <Content Include="src\assets\scripts\libs\ckeditor\plugins\smiley\images\whatchutalkingabout_smile.png" />
+    <Content Include="src\assets\scripts\libs\ckeditor\plugins\smiley\images\wink_smile.gif" />
+    <Content Include="src\assets\scripts\libs\ckeditor\plugins\smiley\images\wink_smile.png" />
+    <Content Include="src\assets\scripts\libs\ckeditor\plugins\specialchar\dialogs\lang\af.js" />
+    <Content Include="src\assets\scripts\libs\ckeditor\plugins\specialchar\dialogs\lang\ar.js" />
+    <Content Include="src\assets\scripts\libs\ckeditor\plugins\specialchar\dialogs\lang\az.js" />
+    <Content Include="src\assets\scripts\libs\ckeditor\plugins\specialchar\dialogs\lang\bg.js" />
+    <Content Include="src\assets\scripts\libs\ckeditor\plugins\specialchar\dialogs\lang\ca.js" />
+    <Content Include="src\assets\scripts\libs\ckeditor\plugins\specialchar\dialogs\lang\cs.js" />
+    <Content Include="src\assets\scripts\libs\ckeditor\plugins\specialchar\dialogs\lang\cy.js" />
+    <Content Include="src\assets\scripts\libs\ckeditor\plugins\specialchar\dialogs\lang\da.js" />
+    <Content Include="src\assets\scripts\libs\ckeditor\plugins\specialchar\dialogs\lang\de-ch.js" />
+    <Content Include="src\assets\scripts\libs\ckeditor\plugins\specialchar\dialogs\lang\de.js" />
+    <Content Include="src\assets\scripts\libs\ckeditor\plugins\specialchar\dialogs\lang\el.js" />
+    <Content Include="src\assets\scripts\libs\ckeditor\plugins\specialchar\dialogs\lang\en-au.js" />
+    <Content Include="src\assets\scripts\libs\ckeditor\plugins\specialchar\dialogs\lang\en-ca.js" />
+    <Content Include="src\assets\scripts\libs\ckeditor\plugins\specialchar\dialogs\lang\en-gb.js" />
+    <Content Include="src\assets\scripts\libs\ckeditor\plugins\specialchar\dialogs\lang\en.js" />
+    <Content Include="src\assets\scripts\libs\ckeditor\plugins\specialchar\dialogs\lang\eo.js" />
+    <Content Include="src\assets\scripts\libs\ckeditor\plugins\specialchar\dialogs\lang\es.js" />
+    <Content Include="src\assets\scripts\libs\ckeditor\plugins\specialchar\dialogs\lang\et.js" />
+    <Content Include="src\assets\scripts\libs\ckeditor\plugins\specialchar\dialogs\lang\eu.js" />
+    <Content Include="src\assets\scripts\libs\ckeditor\plugins\specialchar\dialogs\lang\fa.js" />
+    <Content Include="src\assets\scripts\libs\ckeditor\plugins\specialchar\dialogs\lang\fi.js" />
+    <Content Include="src\assets\scripts\libs\ckeditor\plugins\specialchar\dialogs\lang\fr-ca.js" />
+    <Content Include="src\assets\scripts\libs\ckeditor\plugins\specialchar\dialogs\lang\fr.js" />
+    <Content Include="src\assets\scripts\libs\ckeditor\plugins\specialchar\dialogs\lang\gl.js" />
+    <Content Include="src\assets\scripts\libs\ckeditor\plugins\specialchar\dialogs\lang\he.js" />
+    <Content Include="src\assets\scripts\libs\ckeditor\plugins\specialchar\dialogs\lang\hr.js" />
+    <Content Include="src\assets\scripts\libs\ckeditor\plugins\specialchar\dialogs\lang\hu.js" />
+    <Content Include="src\assets\scripts\libs\ckeditor\plugins\specialchar\dialogs\lang\id.js" />
+    <Content Include="src\assets\scripts\libs\ckeditor\plugins\specialchar\dialogs\lang\it.js" />
+    <Content Include="src\assets\scripts\libs\ckeditor\plugins\specialchar\dialogs\lang\ja.js" />
+    <Content Include="src\assets\scripts\libs\ckeditor\plugins\specialchar\dialogs\lang\km.js" />
+    <Content Include="src\assets\scripts\libs\ckeditor\plugins\specialchar\dialogs\lang\ko.js" />
+    <Content Include="src\assets\scripts\libs\ckeditor\plugins\specialchar\dialogs\lang\ku.js" />
+    <Content Include="src\assets\scripts\libs\ckeditor\plugins\specialchar\dialogs\lang\lt.js" />
+    <Content Include="src\assets\scripts\libs\ckeditor\plugins\specialchar\dialogs\lang\lv.js" />
+    <Content Include="src\assets\scripts\libs\ckeditor\plugins\specialchar\dialogs\lang\nb.js" />
+    <Content Include="src\assets\scripts\libs\ckeditor\plugins\specialchar\dialogs\lang\nl.js" />
+    <Content Include="src\assets\scripts\libs\ckeditor\plugins\specialchar\dialogs\lang\no.js" />
+    <Content Include="src\assets\scripts\libs\ckeditor\plugins\specialchar\dialogs\lang\oc.js" />
+    <Content Include="src\assets\scripts\libs\ckeditor\plugins\specialchar\dialogs\lang\pl.js" />
+    <Content Include="src\assets\scripts\libs\ckeditor\plugins\specialchar\dialogs\lang\pt-br.js" />
+    <Content Include="src\assets\scripts\libs\ckeditor\plugins\specialchar\dialogs\lang\pt.js" />
+    <Content Include="src\assets\scripts\libs\ckeditor\plugins\specialchar\dialogs\lang\ru.js" />
+    <Content Include="src\assets\scripts\libs\ckeditor\plugins\specialchar\dialogs\lang\si.js" />
+    <Content Include="src\assets\scripts\libs\ckeditor\plugins\specialchar\dialogs\lang\sk.js" />
+    <Content Include="src\assets\scripts\libs\ckeditor\plugins\specialchar\dialogs\lang\sl.js" />
+    <Content Include="src\assets\scripts\libs\ckeditor\plugins\specialchar\dialogs\lang\sq.js" />
+    <Content Include="src\assets\scripts\libs\ckeditor\plugins\specialchar\dialogs\lang\sv.js" />
+    <Content Include="src\assets\scripts\libs\ckeditor\plugins\specialchar\dialogs\lang\th.js" />
+    <Content Include="src\assets\scripts\libs\ckeditor\plugins\specialchar\dialogs\lang\tr.js" />
+    <Content Include="src\assets\scripts\libs\ckeditor\plugins\specialchar\dialogs\lang\tt.js" />
+    <Content Include="src\assets\scripts\libs\ckeditor\plugins\specialchar\dialogs\lang\ug.js" />
+    <Content Include="src\assets\scripts\libs\ckeditor\plugins\specialchar\dialogs\lang\uk.js" />
+    <Content Include="src\assets\scripts\libs\ckeditor\plugins\specialchar\dialogs\lang\vi.js" />
+    <Content Include="src\assets\scripts\libs\ckeditor\plugins\specialchar\dialogs\lang\zh-cn.js" />
+    <Content Include="src\assets\scripts\libs\ckeditor\plugins\specialchar\dialogs\lang\zh.js" />
+    <Content Include="src\assets\scripts\libs\ckeditor\plugins\specialchar\dialogs\lang\_translationstatus.txt" />
+    <Content Include="src\assets\scripts\libs\ckeditor\plugins\specialchar\dialogs\specialchar.js" />
+    <Content Include="src\assets\scripts\libs\ckeditor\plugins\tableselection\styles\tableselection.css" />
+    <Content Include="src\assets\scripts\libs\ckeditor\plugins\tabletools\dialogs\tableCell.js" />
+    <Content Include="src\assets\scripts\libs\ckeditor\plugins\table\dialogs\table.js" />
+    <Content Include="src\assets\scripts\libs\ckeditor\plugins\templates\dialogs\templates.css" />
+    <Content Include="src\assets\scripts\libs\ckeditor\plugins\templates\dialogs\templates.js" />
+    <Content Include="src\assets\scripts\libs\ckeditor\plugins\templates\templates\default.js" />
+    <Content Include="src\assets\scripts\libs\ckeditor\plugins\templates\templates\images\template1.gif" />
+    <Content Include="src\assets\scripts\libs\ckeditor\plugins\templates\templates\images\template2.gif" />
+    <Content Include="src\assets\scripts\libs\ckeditor\plugins\templates\templates\images\template3.gif" />
+    <Content Include="src\assets\scripts\libs\ckeditor\plugins\wsc\dialogs\ciframe.html" />
+    <Content Include="src\assets\scripts\libs\ckeditor\plugins\wsc\dialogs\tmpFrameset.html" />
+    <Content Include="src\assets\scripts\libs\ckeditor\plugins\wsc\dialogs\wsc.css" />
+    <Content Include="src\assets\scripts\libs\ckeditor\plugins\wsc\dialogs\wsc.js" />
+    <Content Include="src\assets\scripts\libs\ckeditor\plugins\wsc\dialogs\wsc_ie.js" />
+    <Content Include="src\assets\scripts\libs\ckeditor\plugins\wsc\skins\moono-lisa\wsc.css" />
+    <Content Include="src\assets\scripts\libs\ckeditor\samples\css\samples.css" />
+    <Content Include="src\assets\scripts\libs\ckeditor\samples\img\github-top.png" />
+    <Content Include="src\assets\scripts\libs\ckeditor\samples\img\header-bg.png" />
+    <Content Include="src\assets\scripts\libs\ckeditor\samples\img\header-separator.png" />
+    <Content Include="src\assets\scripts\libs\ckeditor\samples\img\logo.png" />
+    <Content Include="src\assets\scripts\libs\ckeditor\samples\img\navigation-tip.png" />
+    <Content Include="src\assets\scripts\libs\ckeditor\samples\index.html" />
+    <Content Include="src\assets\scripts\libs\ckeditor\samples\js\sample.js" />
+    <Content Include="src\assets\scripts\libs\ckeditor\samples\js\sf.js" />
+    <Content Include="src\assets\scripts\libs\ckeditor\samples\old\ajax.html" />
+    <Content Include="src\assets\scripts\libs\ckeditor\samples\old\api.html" />
+    <Content Include="src\assets\scripts\libs\ckeditor\samples\old\appendto.html" />
+    <Content Include="src\assets\scripts\libs\ckeditor\samples\old\assets\inlineall\logo.png" />
+    <Content Include="src\assets\scripts\libs\ckeditor\samples\old\assets\outputxhtml\outputxhtml.css" />
+    <Content Include="src\assets\scripts\libs\ckeditor\samples\old\assets\sample.jpg" />
+    <Content Include="src\assets\scripts\libs\ckeditor\samples\old\assets\uilanguages\languages.js" />
+    <Content Include="src\assets\scripts\libs\ckeditor\samples\old\datafiltering.html" />
+    <Content Include="src\assets\scripts\libs\ckeditor\samples\old\dialog\assets\my_dialog.js" />
+    <Content Include="src\assets\scripts\libs\ckeditor\samples\old\dialog\dialog.html" />
+    <Content Include="src\assets\scripts\libs\ckeditor\samples\old\divreplace.html" />
+    <Content Include="src\assets\scripts\libs\ckeditor\samples\old\enterkey\enterkey.html" />
+    <Content Include="src\assets\scripts\libs\ckeditor\samples\old\htmlwriter\assets\outputforflash\outputforflash.swf" />
+    <Content Include="src\assets\scripts\libs\ckeditor\samples\old\htmlwriter\assets\outputforflash\swfobject.js" />
+    <Content Include="src\assets\scripts\libs\ckeditor\samples\old\htmlwriter\outputforflash.html" />
+    <Content Include="src\assets\scripts\libs\ckeditor\samples\old\htmlwriter\outputhtml.html" />
+    <Content Include="src\assets\scripts\libs\ckeditor\samples\old\index.html" />
+    <Content Include="src\assets\scripts\libs\ckeditor\samples\old\inlineall.html" />
+    <Content Include="src\assets\scripts\libs\ckeditor\samples\old\inlinebycode.html" />
+    <Content Include="src\assets\scripts\libs\ckeditor\samples\old\inlinetextarea.html" />
+    <Content Include="src\assets\scripts\libs\ckeditor\samples\old\jquery.html" />
+    <Content Include="src\assets\scripts\libs\ckeditor\samples\old\magicline\magicline.html" />
+    <Content Include="src\assets\scripts\libs\ckeditor\samples\old\readonly.html" />
+    <Content Include="src\assets\scripts\libs\ckeditor\samples\old\replacebyclass.html" />
+    <Content Include="src\assets\scripts\libs\ckeditor\samples\old\replacebycode.html" />
+    <Content Include="src\assets\scripts\libs\ckeditor\samples\old\sample.css" />
+    <Content Include="src\assets\scripts\libs\ckeditor\samples\old\sample.js" />
+    <Content Include="src\assets\scripts\libs\ckeditor\samples\old\tabindex.html" />
+    <Content Include="src\assets\scripts\libs\ckeditor\samples\old\toolbar\toolbar.html" />
+    <Content Include="src\assets\scripts\libs\ckeditor\samples\old\uicolor.html" />
+    <Content Include="src\assets\scripts\libs\ckeditor\samples\old\uilanguages.html" />
+    <Content Include="src\assets\scripts\libs\ckeditor\samples\old\wysiwygarea\fullpage.html" />
+    <Content Include="src\assets\scripts\libs\ckeditor\samples\old\xhtmlstyle.html" />
+    <Content Include="src\assets\scripts\libs\ckeditor\samples\toolbarconfigurator\css\fontello.css" />
+    <Content Include="src\assets\scripts\libs\ckeditor\samples\toolbarconfigurator\font\fontello.svg" />
+    <Content Include="src\assets\scripts\libs\ckeditor\samples\toolbarconfigurator\font\LICENSE.txt" />
+    <Content Include="src\assets\scripts\libs\ckeditor\samples\toolbarconfigurator\index.html" />
+    <Content Include="src\assets\scripts\libs\ckeditor\samples\toolbarconfigurator\js\abstracttoolbarmodifier.js" />
+    <Content Include="src\assets\scripts\libs\ckeditor\samples\toolbarconfigurator\js\fulltoolbareditor.js" />
+    <Content Include="src\assets\scripts\libs\ckeditor\samples\toolbarconfigurator\js\toolbarmodifier.js" />
+    <Content Include="src\assets\scripts\libs\ckeditor\samples\toolbarconfigurator\js\toolbartextmodifier.js" />
+    <Content Include="src\assets\scripts\libs\ckeditor\samples\toolbarconfigurator\lib\codemirror\codemirror.css" />
+    <Content Include="src\assets\scripts\libs\ckeditor\samples\toolbarconfigurator\lib\codemirror\codemirror.js" />
+    <Content Include="src\assets\scripts\libs\ckeditor\samples\toolbarconfigurator\lib\codemirror\javascript.js" />
+    <Content Include="src\assets\scripts\libs\ckeditor\samples\toolbarconfigurator\lib\codemirror\neo.css" />
+    <Content Include="src\assets\scripts\libs\ckeditor\samples\toolbarconfigurator\lib\codemirror\show-hint.css" />
+    <Content Include="src\assets\scripts\libs\ckeditor\samples\toolbarconfigurator\lib\codemirror\show-hint.js" />
+    <Content Include="src\assets\scripts\libs\ckeditor\skins\moono-lisa\dialog.css" />
+    <Content Include="src\assets\scripts\libs\ckeditor\skins\moono-lisa\dialog_ie.css" />
+    <Content Include="src\assets\scripts\libs\ckeditor\skins\moono-lisa\dialog_ie8.css" />
+    <Content Include="src\assets\scripts\libs\ckeditor\skins\moono-lisa\dialog_iequirks.css" />
+    <Content Include="src\assets\scripts\libs\ckeditor\skins\moono-lisa\editor.css" />
+    <Content Include="src\assets\scripts\libs\ckeditor\skins\moono-lisa\editor_gecko.css" />
+    <Content Include="src\assets\scripts\libs\ckeditor\skins\moono-lisa\editor_ie.css" />
+    <Content Include="src\assets\scripts\libs\ckeditor\skins\moono-lisa\editor_ie8.css" />
+    <Content Include="src\assets\scripts\libs\ckeditor\skins\moono-lisa\editor_iequirks.css" />
+    <Content Include="src\assets\scripts\libs\ckeditor\skins\moono-lisa\icons.png" />
+    <Content Include="src\assets\scripts\libs\ckeditor\skins\moono-lisa\icons_hidpi.png" />
+    <Content Include="src\assets\scripts\libs\ckeditor\skins\moono-lisa\images\arrow.png" />
+    <Content Include="src\assets\scripts\libs\ckeditor\skins\moono-lisa\images\close.png" />
+    <Content Include="src\assets\scripts\libs\ckeditor\skins\moono-lisa\images\hidpi\close.png" />
+    <Content Include="src\assets\scripts\libs\ckeditor\skins\moono-lisa\images\hidpi\lock-open.png" />
+    <Content Include="src\assets\scripts\libs\ckeditor\skins\moono-lisa\images\hidpi\lock.png" />
+    <Content Include="src\assets\scripts\libs\ckeditor\skins\moono-lisa\images\hidpi\refresh.png" />
+    <Content Include="src\assets\scripts\libs\ckeditor\skins\moono-lisa\images\lock-open.png" />
+    <Content Include="src\assets\scripts\libs\ckeditor\skins\moono-lisa\images\lock.png" />
+    <Content Include="src\assets\scripts\libs\ckeditor\skins\moono-lisa\images\refresh.png" />
+    <Content Include="src\assets\scripts\libs\ckeditor\skins\moono-lisa\images\spinner.gif" />
+    <Content Include="src\assets\scripts\libs\ckeditor\styles.js" />
+    <Content Include="src\assets\scripts\libs\jquery.scrollbar\index.js" />
+    <Content Include="src\assets\scripts\libs\jquery.scrollbar\jquery.scrollbar.css" />
+    <Content Include="src\assets\scripts\libs\jquery.scrollbar\jquery.scrollbar.js" />
+    <Content Include="src\assets\scripts\libs\jquery.scrollbar\jquery.scrollbar.min.js" />
+    <Content Include="src\assets\scripts\libs\jquery.scrollbar\meteor\tests.js" />
+    <Content Include="src\assets\scripts\libs\jquery.scrollbar\package.js" />
+    <Content Include="src\assets\scripts\libs\jquery\dist\jquery.js" />
+    <Content Include="src\assets\scripts\libs\jquery\dist\jquery.min.js" />
+    <Content Include="src\assets\scripts\libs\jquery\MIT-LICENSE.txt" />
+    <Content Include="src\assets\scripts\libs\jquery\src\ajax.js" />
+    <Content Include="src\assets\scripts\libs\jquery\src\ajax\jsonp.js" />
+    <Content Include="src\assets\scripts\libs\jquery\src\ajax\load.js" />
+    <Content Include="src\assets\scripts\libs\jquery\src\ajax\parseJSON.js" />
+    <Content Include="src\assets\scripts\libs\jquery\src\ajax\parseXML.js" />
+    <Content Include="src\assets\scripts\libs\jquery\src\ajax\script.js" />
+    <Content Include="src\assets\scripts\libs\jquery\src\ajax\var\nonce.js" />
+    <Content Include="src\assets\scripts\libs\jquery\src\ajax\var\rquery.js" />
+    <Content Include="src\assets\scripts\libs\jquery\src\ajax\xhr.js" />
+    <Content Include="src\assets\scripts\libs\jquery\src\attributes.js" />
+    <Content Include="src\assets\scripts\libs\jquery\src\attributes\attr.js" />
+    <Content Include="src\assets\scripts\libs\jquery\src\attributes\classes.js" />
+    <Content Include="src\assets\scripts\libs\jquery\src\attributes\prop.js" />
+    <Content Include="src\assets\scripts\libs\jquery\src\attributes\support.js" />
+    <Content Include="src\assets\scripts\libs\jquery\src\attributes\val.js" />
+    <Content Include="src\assets\scripts\libs\jquery\src\callbacks.js" />
+    <Content Include="src\assets\scripts\libs\jquery\src\core.js" />
+    <Content Include="src\assets\scripts\libs\jquery\src\core\access.js" />
+    <Content Include="src\assets\scripts\libs\jquery\src\core\init.js" />
+    <Content Include="src\assets\scripts\libs\jquery\src\core\parseHTML.js" />
+    <Content Include="src\assets\scripts\libs\jquery\src\core\ready.js" />
+    <Content Include="src\assets\scripts\libs\jquery\src\core\var\rsingleTag.js" />
+    <Content Include="src\assets\scripts\libs\jquery\src\css.js" />
+    <Content Include="src\assets\scripts\libs\jquery\src\css\addGetHookIf.js" />
+    <Content Include="src\assets\scripts\libs\jquery\src\css\curCSS.js" />
+    <Content Include="src\assets\scripts\libs\jquery\src\css\defaultDisplay.js" />
+    <Content Include="src\assets\scripts\libs\jquery\src\css\hiddenVisibleSelectors.js" />
+    <Content Include="src\assets\scripts\libs\jquery\src\css\support.js" />
+    <Content Include="src\assets\scripts\libs\jquery\src\css\swap.js" />
+    <Content Include="src\assets\scripts\libs\jquery\src\css\var\cssExpand.js" />
+    <Content Include="src\assets\scripts\libs\jquery\src\css\var\getStyles.js" />
+    <Content Include="src\assets\scripts\libs\jquery\src\css\var\isHidden.js" />
+    <Content Include="src\assets\scripts\libs\jquery\src\css\var\rmargin.js" />
+    <Content Include="src\assets\scripts\libs\jquery\src\css\var\rnumnonpx.js" />
+    <Content Include="src\assets\scripts\libs\jquery\src\data.js" />
+    <Content Include="src\assets\scripts\libs\jquery\src\data\accepts.js" />
+    <Content Include="src\assets\scripts\libs\jquery\src\data\Data.js" />
+    <Content Include="src\assets\scripts\libs\jquery\src\data\var\data_priv.js" />
+    <Content Include="src\assets\scripts\libs\jquery\src\data\var\data_user.js" />
+    <Content Include="src\assets\scripts\libs\jquery\src\deferred.js" />
+    <Content Include="src\assets\scripts\libs\jquery\src\deprecated.js" />
+    <Content Include="src\assets\scripts\libs\jquery\src\dimensions.js" />
+    <Content Include="src\assets\scripts\libs\jquery\src\effects.js" />
+    <Content Include="src\assets\scripts\libs\jquery\src\effects\animatedSelector.js" />
+    <Content Include="src\assets\scripts\libs\jquery\src\effects\Tween.js" />
+    <Content Include="src\assets\scripts\libs\jquery\src\event.js" />
+    <Content Include="src\assets\scripts\libs\jquery\src\event\ajax.js" />
+    <Content Include="src\assets\scripts\libs\jquery\src\event\alias.js" />
+    <Content Include="src\assets\scripts\libs\jquery\src\event\support.js" />
+    <Content Include="src\assets\scripts\libs\jquery\src\exports\amd.js" />
+    <Content Include="src\assets\scripts\libs\jquery\src\exports\global.js" />
+    <Content Include="src\assets\scripts\libs\jquery\src\intro.js" />
+    <Content Include="src\assets\scripts\libs\jquery\src\jquery.js" />
+    <Content Include="src\assets\scripts\libs\jquery\src\manipulation.js" />
+    <Content Include="src\assets\scripts\libs\jquery\src\manipulation\support.js" />
+    <Content Include="src\assets\scripts\libs\jquery\src\manipulation\var\rcheckableType.js" />
+    <Content Include="src\assets\scripts\libs\jquery\src\manipulation\_evalUrl.js" />
+    <Content Include="src\assets\scripts\libs\jquery\src\offset.js" />
+    <Content Include="src\assets\scripts\libs\jquery\src\outro.js" />
+    <Content Include="src\assets\scripts\libs\jquery\src\queue.js" />
+    <Content Include="src\assets\scripts\libs\jquery\src\queue\delay.js" />
+    <Content Include="src\assets\scripts\libs\jquery\src\selector-native.js" />
+    <Content Include="src\assets\scripts\libs\jquery\src\selector-sizzle.js" />
+    <Content Include="src\assets\scripts\libs\jquery\src\selector.js" />
+    <Content Include="src\assets\scripts\libs\jquery\src\serialize.js" />
+    <Content Include="src\assets\scripts\libs\jquery\src\sizzle\dist\sizzle.js" />
+    <Content Include="src\assets\scripts\libs\jquery\src\sizzle\dist\sizzle.min.js" />
+    <Content Include="src\assets\scripts\libs\jquery\src\traversing.js" />
+    <Content Include="src\assets\scripts\libs\jquery\src\traversing\findFilter.js" />
+    <Content Include="src\assets\scripts\libs\jquery\src\traversing\var\rneedsContext.js" />
+    <Content Include="src\assets\scripts\libs\jquery\src\var\arr.js" />
+    <Content Include="src\assets\scripts\libs\jquery\src\var\class2type.js" />
+    <Content Include="src\assets\scripts\libs\jquery\src\var\concat.js" />
+    <Content Include="src\assets\scripts\libs\jquery\src\var\hasOwn.js" />
+    <Content Include="src\assets\scripts\libs\jquery\src\var\indexOf.js" />
+    <Content Include="src\assets\scripts\libs\jquery\src\var\pnum.js" />
+    <Content Include="src\assets\scripts\libs\jquery\src\var\push.js" />
+    <Content Include="src\assets\scripts\libs\jquery\src\var\rnotwhite.js" />
+    <Content Include="src\assets\scripts\libs\jquery\src\var\slice.js" />
+    <Content Include="src\assets\scripts\libs\jquery\src\var\strundefined.js" />
+    <Content Include="src\assets\scripts\libs\jquery\src\var\support.js" />
+    <Content Include="src\assets\scripts\libs\jquery\src\var\toString.js" />
+    <Content Include="src\assets\scripts\libs\jquery\src\wrap.js" />
+    <Content Include="src\assets\scripts\libs\popper.min.js" />
+    <Content Include="src\assets\styles\libs\font-awesome\.gitignore" />
+    <Content Include="src\assets\styles\libs\font-awesome\css\font-awesome.css" />
+    <Content Include="src\assets\styles\libs\font-awesome\css\font-awesome.min.css" />
+    <Content Include="src\assets\styles\libs\font-awesome\fonts\fontawesome-webfont.svg" />
+    <Content Include="src\assets\styles\libs\font-awesome\HELP-US-OUT.txt" />
+    <Content Include="src\config\config.dev.json" />
+    <Content Include="src\helpers.js" />
+    <Content Include="src\index.html" />
+    <Content Include="src\app\item-level-dashboards\operational-strategy-items-dashboards\initiative-dashboard.component.html" />
+    <Content Include="src\app\item-level-dashboards\operational-strategy-items-dashboards\item-financial\item-financial.component.html" />
+    <Content Include="src\app\item-level-dashboards\operational-strategy-items-dashboards\item-header\item-header.component.html" />
+    <Content Include="src\app\item-level-dashboards\operational-strategy-items-dashboards\item-kpi-listing\item-kpi-listing.component.html" />
+    <Content Include="src\app\item-level-dashboards\operational-strategy-items-dashboards\item-milestones\item-milestones.component.html" />
+    <Content Include="src\app\item-level-dashboards\operational-strategy-items-dashboards\item-score\item-score.component.html" />
+    <Content Include="src\app\items-management\initiative\manage-initiative-hierarchy\strategy-item-children-tabs\calculation-method-weight.component.html" />
+    <Content Include="src\app\items-management\initiative\manage-initiative-hierarchy\strategy-item-children-tabs\milestones-tab.component.html" />
+    <Content Include="src\app\login\login.component.html" />
+    <Content Include="src\app\items-management\initiative\manage-initiative-hierarchy\manage-initiative-hierarchy.component.html" />
+    <TypeScriptCompile Include="public-api.ts" />
+    <TypeScriptCompile Include="src\app\administration\cube-management\cube-management.component.ts" />
+    <TypeScriptCompile Include="src\app\administration\reporting-management\reporting-management.component.ts" />
+    <TypeScriptCompile Include="src\app\administration\tag-management\tag-management.component.ts" />
+    <TypeScriptCompile Include="src\app\app-routing-loader.ts" />
+    <TypeScriptCompile Include="src\app\item-level-dashboards\kpi-dashboard\kpi-benchmarks\kpi-benchmarks.component.ts" />
+    <TypeScriptCompile Include="src\app\item-level-dashboards\kpi-dashboard\kpi-comments\kpi-comments.component.ts" />
+    <TypeScriptCompile Include="src\app\item-level-dashboards\kpi-dashboard\kpi-linked-strategy-items\kpi-linked-strategy-items.component.ts" />
+    <TypeScriptCompile Include="src\app\services\strategy-item-events.service.ts" />
+    <TypeScriptCompile Include="src\app\shared\item-milestones-and-outputs\item-milestones-and-outputs.component.ts" />
+    <TypeScriptCompile Include="src\app\item-level-dashboards\operational-strategy-items-dashboards\item-tasks\item-tasks.component.ts" />
+    <TypeScriptCompile Include="src\app\item-level-dashboards\structure-item-dashboard\structure-item-dashboard.component.ts" />
+    <TypeScriptCompile Include="src\app\kpi-management\kpi-strategy-item-linking\kpi-strategy-item-linking.component.ts" />
+    <TypeScriptCompile Include="src\app\my-dashboard\items-with-due-children\items-with-due-children.component.ts" />
+    <TypeScriptCompile Include="src\app\my-dashboard\strategy-item-workflow-history\strategy-item-workflow-history-card\strategy-item-workflow-history-card.component.ts" />
+    <TypeScriptCompile Include="src\app\my-dashboard\strategy-item-workflow-history\strategy-item-workflow-history-filter\strategy-item-workflow-history-filter.component.ts" />
+    <TypeScriptCompile Include="src\app\my-dashboard\strategy-item-workflow-history\strategy-item-workflow-history-popup\strategy-item-workflow-history-popup.component.ts" />
+    <TypeScriptCompile Include="src\app\my-dashboard\strategy-item-workflow-history\strategy-item-workflow-history.component.ts" />
+    <TypeScriptCompile Include="src\app\notifications\notification-templates\due-strategyitem-children\due-strategyitem-children.component.ts" />
+    <TypeScriptCompile Include="src\app\notifications\notification-templates\strategy-item-workflow-notification\strategy-item-workflow-notification.component.ts" />
+    <TypeScriptCompile Include="src\app\routes\strategy-map-routing.module.ts" />
+    <TypeScriptCompile Include="src\app\services\administrative-management.service.ts" />
+    <TypeScriptCompile Include="src\app\services\global-shared-services.service.ts" />
+    <TypeScriptCompile Include="src\app\services\idle.service.ts" />
+    <TypeScriptCompile Include="src\app\services\strategy-map.service.ts" />
+    <TypeScriptCompile Include="src\app\shared\add-linking-initiatives\add-linking-initiatives.component.ts" />
+    <TypeScriptCompile Include="src\app\shared\errors\errors-handler\errors-handler.ts" />
+    <TypeScriptCompile Include="src\app\shared\errors\errors-routing\errors-routing.module.ts" />
+    <TypeScriptCompile Include="src\app\shared\errors\errors-service\errors-service.ts" />
+    <TypeScriptCompile Include="src\app\shared\errors\errors.module.ts" />
+    <TypeScriptCompile Include="src\app\shared\errors\server-errors-interceptor\server-errors.interceptor.ts" />
+    <TypeScriptCompile Include="src\app\shared\errors\generic-error\generic-error.component.ts" />
+    <TypeScriptCompile Include="src\app\routes\administration-routing.module.ts" />
+    <TypeScriptCompile Include="src\app\data-integration\data-integration-login.component.ts" />
+    <TypeScriptCompile Include="src\app\data-integration\data-integration.module.ts" />
+    <TypeScriptCompile Include="src\app\data-integration\strategy-item-data-integration\strategy-item-data-integration-history\strategy-item-data-integration-history.component.ts" />
+    <TypeScriptCompile Include="src\app\data-integration\strategy-item-data-integration\strategy-item-data-integration.component.ts" />
+    <TypeScriptCompile Include="src\app\data-integration\kpi-data-integration\kpi-data-integration-history\kpi-data-integration-history.component.ts" />
+    <TypeScriptCompile Include="src\app\data-integration\kpi-data-integration\kpi-data-integration.component.ts" />
+    <TypeScriptCompile Include="src\app\data-integration\user-connection-model.ts" />
+    <TypeScriptCompile Include="src\app\routes\high-level-dashboards-routing.module.ts" />
+    <TypeScriptCompile Include="src\app\high-level-dashboards\scorecards\kpis-initiatives-score-card\kpis-initiatives-score-card.component.ts" />
+    <TypeScriptCompile Include="src\app\high-level-dashboards\scorecards\programs-score-card\programs-score-card.component.ts" />
+    <TypeScriptCompile Include="src\app\high-level-dashboards\scorecards\projects-score-card\projects-score-card.component.ts" />
+    <TypeScriptCompile Include="src\app\high-level-dashboards\themes-scorecard\themes-scorecard.component.ts" />
+    <TypeScriptCompile Include="src\app\high-level-dashboards\perspectives-scorecard\perspectives-scorecard.component.ts" />
+    <TypeScriptCompile Include="src\app\item-level-dashboards\kpi-dashboard\kpi-attributes\kpi-attributes.component.ts" />
+    <TypeScriptCompile Include="src\app\item-level-dashboards\kpi-dashboard\kpi-dimensions-chart\kpi-dimensions-chart.component.ts" />
+    <TypeScriptCompile Include="src\app\item-level-dashboards\kpi-dashboard\kpi-dimensions-table\kpi-dimensions-table.component.ts" />
+    <TypeScriptCompile Include="src\app\issues\add-edit-issues\add-edit-issues.component.ts" />
+    <TypeScriptCompile Include="src\app\issues\issues.component.ts" />
+    <TypeScriptCompile Include="src\app\issues\issues.module.ts" />
+    <TypeScriptCompile Include="src\app\item-level-dashboards\operational-strategy-items-dashboards\initiative-dashboard.component.ts" />
+    <TypeScriptCompile Include="src\app\item-level-dashboards\operational-strategy-items-dashboards\item-attributes\item-attributes.component.ts" />
+    <TypeScriptCompile Include="src\app\item-level-dashboards\operational-strategy-items-dashboards\item-financial\item-financial.component.ts" />
+    <TypeScriptCompile Include="src\app\item-level-dashboards\operational-strategy-items-dashboards\item-header\item-header.component.ts" />
+    <TypeScriptCompile Include="src\app\item-level-dashboards\operational-strategy-items-dashboards\item-kpi-listing\item-kpi-listing.component.ts" />
+    <TypeScriptCompile Include="src\app\item-level-dashboards\operational-strategy-items-dashboards\item-milestones\item-milestones.component.ts" />
+    <TypeScriptCompile Include="src\app\item-level-dashboards\operational-strategy-items-dashboards\item-ganttchart\item-ganttchart.component.ts" />
+    <TypeScriptCompile Include="src\app\item-level-dashboards\operational-strategy-items-dashboards\item-score\item-score.component.ts" />
+    <TypeScriptCompile Include="src\app\item-level-dashboards\item-level-dashboards.module.ts" />
+    <TypeScriptCompile Include="src\app\item-level-dashboards\kpi-dashboard\kpi-calculations\kpi-calculations.component.ts" />
+    <TypeScriptCompile Include="src\app\item-level-dashboards\kpi-dashboard\kpi-dashboard.component.ts" />
+    <TypeScriptCompile Include="src\app\item-level-dashboards\kpi-dashboard\kpi-header\kpi-header-details\kpi-header-details.component.ts" />
+    <TypeScriptCompile Include="src\app\item-level-dashboards\kpi-dashboard\kpi-header\kpi-header-score\kpi-header-score.component.ts" />
+    <TypeScriptCompile Include="src\app\item-level-dashboards\kpi-dashboard\kpi-header\kpi-header.component.ts" />
+    <TypeScriptCompile Include="src\app\item-level-dashboards\kpi-dashboard\kpi-header\kpi-score-chart\kpi-score-chart.component.ts" />
+    <TypeScriptCompile Include="src\app\item-level-dashboards\kpi-dashboard\kpi-timeline\kpi-timeline.component.ts" />
+    <TypeScriptCompile Include="src\app\item-level-dashboards\kpi-dashboard\kpi-trend-chart\kpi-trend-chart.component.ts" />
+    <TypeScriptCompile Include="src\app\item-level-dashboards\operational-strategy-items-dashboards\program-dashboard.component.ts" />
+    <TypeScriptCompile Include="src\app\item-level-dashboards\operational-strategy-items-dashboards\project-dashboard.component.ts" />
+    <TypeScriptCompile Include="src\app\kpi-management\kpi-display-format\display-format.component.ts" />
+    <TypeScriptCompile Include="src\app\kpi-management\kpi-management.module.ts" />
+    <TypeScriptCompile Include="src\app\kpi-management\kpi-measure\kpi-measure.component.ts" />
+    <TypeScriptCompile Include="src\app\kpi-management\kpi-metadata\kpi-category\kpi-category.component.ts" />
+    <TypeScriptCompile Include="src\app\kpi-management\kpi-metadata\indicator-groups\indicator-groups.component.ts" />
+    <TypeScriptCompile Include="src\app\kpi-management\kpi-metadata\kpi-metadata.component.ts" />
+    <TypeScriptCompile Include="src\app\kpi-management\kpi-quick-add\kpi-quick-add.component.ts" />
+    <TypeScriptCompile Include="src\app\kpi-management\kpi-threshold\kpi-threshold.component.ts" />
+    <TypeScriptCompile Include="src\app\kpi-management\manage-benchmarks\manage-benchmarks.component.ts" />
+    <TypeScriptCompile Include="src\app\kpi-management\manage-kpi.component.ts" />
+    <TypeScriptCompile Include="src\app\kpi-management\measure-definition\measure-direct-definition.component.ts" />
+    <TypeScriptCompile Include="src\app\kpi-management\measure-definition\measure-formula-definition.component.ts" />
+    <TypeScriptCompile Include="src\app\license-management\license-expired\license-expired.component.ts" />
+    <TypeScriptCompile Include="src\app\license-management\license-renew\license-renew.component.ts" />
+    <TypeScriptCompile Include="src\app\license-management\license.module.ts" />
+    <TypeScriptCompile Include="src\app\administration\maintenance\audit-notifications-job\audit-notifications-job.component.ts" />
+    <TypeScriptCompile Include="src\app\administration\maintenance\cube-handling-job\cube-handling-job.component.ts" />
+    <TypeScriptCompile Include="src\app\administration\maintenance\epm-integration-job\epm-integration-job.component.ts" />
+    <TypeScriptCompile Include="src\app\administration\maintenance\jobs\jobs.component.ts" />
+    <TypeScriptCompile Include="src\app\administration\administration.module.ts" />
+    <TypeScriptCompile Include="src\app\administration\maintenance\pmf-notifications-job\pmf-notifications-job.component.ts" />
+    <TypeScriptCompile Include="src\app\administration\maintenance\Quartz-Job\quartz-job.component.ts" />
+    <TypeScriptCompile Include="src\app\administration\maintenance\report-database-migration-job\report-database-migration-job.component.ts" />
+    <TypeScriptCompile Include="src\app\manage-initiatives\manage-initiative.component.ts" />
+    <TypeScriptCompile Include="src\app\manage-initiatives\manage-initiative.module.ts" />
+    <TypeScriptCompile Include="src\app\routes\manage-initiatives-routing.module.ts" />
+    <TypeScriptCompile Include="src\app\manage-initiatives\pending-initiatives\pending-initiatives-card\pending-initiatives-card.component.ts" />
+    <TypeScriptCompile Include="src\app\manage-initiatives\pending-initiatives\pending-initiatives.component.ts" />
+    <TypeScriptCompile Include="src\app\manage-kpis\manage-kpis.component.ts" />
+    <TypeScriptCompile Include="src\app\manage-kpis\manage-kpis.module.ts" />
+    <TypeScriptCompile Include="src\app\routes\manage-kpis-routing.module.ts" />
+    <TypeScriptCompile Include="src\app\routes\manage-programs-routing.module.ts" />
+    <TypeScriptCompile Include="src\app\manage-programs\manage-program.component.ts" />
+    <TypeScriptCompile Include="src\app\manage-programs\manage-program.module.ts" />
+    <TypeScriptCompile Include="src\app\routes\manage-projects-routing.module.ts" />
+    <TypeScriptCompile Include="src\app\manage-projects\manage-project.component.ts" />
+    <TypeScriptCompile Include="src\app\manage-projects\manage-project.module.ts" />
+    <TypeScriptCompile Include="src\app\models\config.ts" />
+    <TypeScriptCompile Include="src\app\models\ganttbar.model.ts" />
+    <TypeScriptCompile Include="src\app\notifications\notification-templates\comment-notification.component\comment-notification.component.ts" />
+    <TypeScriptCompile Include="src\app\notifications\notification-templates\kpi-alert-notification.component\kpi-alert-notification.component.ts" />
+    <TypeScriptCompile Include="src\app\notifications\notification-templates\rejected-metrics-values-notification.component\rejected-metrics-values-notification.component.ts" />
+    <TypeScriptCompile Include="src\app\notifications\notification-templates\action-item-notification.component\action-item-notification.component.ts" />
+    <TypeScriptCompile Include="src\app\notifications\notification-templates\updated-metrics-values-notification.component\updated-metrics-values-notification.component.ts" />
+    <TypeScriptCompile Include="src\app\notifications\notifications.component.ts" />
+    <TypeScriptCompile Include="src\app\notifications\notifications.module.ts" />
+    <TypeScriptCompile Include="src\app\objective-dashboard\objective-scorecard.component.ts" />
+    <TypeScriptCompile Include="src\app\ontrack.module.ts" />
+    <TypeScriptCompile Include="src\app\reducers\kpi-management-reducer.ts" />
+    <TypeScriptCompile Include="src\app\reducers\metric-reducer.ts" />
+    <TypeScriptCompile Include="src\app\reducers\organization-units-names-reducer.ts" />
+    <TypeScriptCompile Include="src\app\reducers\strategy-item-metadata-reducer.ts" />
+    <TypeScriptCompile Include="src\app\reducers\strategy-item-reducer.ts" />
+    <TypeScriptCompile Include="src\app\risks\add-edit-risk\add-edit-risk.component.ts" />
+    <TypeScriptCompile Include="src\app\risks\risks.component.ts" />
+    <TypeScriptCompile Include="src\app\risks\risks.module.ts" />
+    <TypeScriptCompile Include="src\app\services\alertify.service.ts" />
+    <TypeScriptCompile Include="src\app\services\app-initializer.service.ts" />
+    <TypeScriptCompile Include="src\app\services\authentication-guard.service.ts" />
+    <TypeScriptCompile Include="src\app\services\data-migration.service.ts" />
+    <TypeScriptCompile Include="src\app\services\pending-strategy-items-filter.service.ts" />
+    <TypeScriptCompile Include="src\app\services\environment.service.ts" />
+    <TypeScriptCompile Include="src\app\services\issues.service.ts" />
+    <TypeScriptCompile Include="src\app\services\kpi-management-events.service.ts" />
+    <TypeScriptCompile Include="src\app\services\license-validation.service.ts" />
+    <TypeScriptCompile Include="src\app\services\metric-management.service.ts" />
+    <TypeScriptCompile Include="src\app\services\notification-management.service.ts" />
+    <TypeScriptCompile Include="src\app\services\quartz-job.service.ts" />
+    <TypeScriptCompile Include="src\app\services\item-level-dashboard-events.service.ts" />
+    <TypeScriptCompile Include="src\app\services\risk.service.ts" />
+    <TypeScriptCompile Include="src\app\services\security-management.service.ts" />
+    <TypeScriptCompile Include="src\app\shared\aligned-to\aligned-to.component.ts" />
+    <TypeScriptCompile Include="src\app\shared\collaboration\action-items\action-items.component.ts" />
+    <TypeScriptCompile Include="src\app\shared\collaboration\action-items\manage-action-item\manage-action-item.component.ts" />
+    <TypeScriptCompile Include="src\app\shared\collaboration\social-comments\social-comments.component.ts" />
+    <TypeScriptCompile Include="src\app\shared\cron-expression.class.ts" />
+    <TypeScriptCompile Include="src\app\shared\CustomDatepickerI18n.ts" />
+    <TypeScriptCompile Include="src\app\shared\data-entry\metric-data-with-dimensions\metric-data-with-dimensions.component.ts" />
+    <TypeScriptCompile Include="src\app\shared\dimensions-members-selector\dimensions-members-selector-orderList.component.ts" />
+    <TypeScriptCompile Include="src\app\shared\directives\close-popover-outside-click.directive.ts" />
+    <TypeScriptCompile Include="src\app\shared\directives\input-disable-paste.directive.ts" />
+    <TypeScriptCompile Include="src\app\shared\directives\input-number.directive.ts" />
+    <TypeScriptCompile Include="src\app\shared\directives\input-trim.directive.ts" />
+    <TypeScriptCompile Include="src\app\routes\item-level-dashboards-routing.module.ts" />
+    <TypeScriptCompile Include="src\app\item-level-dashboards\theme-dashboard\theme-dashboard.component.ts" />
+    <TypeScriptCompile Include="src\app\shared\directives\number-incrementer.directive.ts" />
+    <TypeScriptCompile Include="src\app\shared\directives\strip-html.directive.ts" />
+    <TypeScriptCompile Include="src\app\shared\general-filter\general-filter.component.ts" />
+    <TypeScriptCompile Include="src\app\shared\item-cards\initiative-header\initiative-header.component.ts" />
+    <TypeScriptCompile Include="src\app\shared\item-cards\program-card\program-card.component.ts" />
+    <TypeScriptCompile Include="src\app\shared\item-cards\project-card\project-card.component.ts" />
+    <TypeScriptCompile Include="src\app\shared\item-descriptor\item-descriptor.component.ts" />
+    <TypeScriptCompile Include="src\app\shared\item-info\item-info.component.ts" />
+    <TypeScriptCompile Include="src\app\shared\item-list\initiative-objective-list\initiative-objective-list.component.ts" />
+    <TypeScriptCompile Include="src\app\shared\item-list\kpi-objective-list\kpi-objective-list.component.ts" />
+    <TypeScriptCompile Include="src\app\shared\item-list\program-list\program-list.component.ts" />
+    <TypeScriptCompile Include="src\app\shared\item-list\project-list\project-list.component.ts" />
+    <TypeScriptCompile Include="src\app\shared\item-tag\item-tag.component.ts" />
+    <TypeScriptCompile Include="src\app\shared\manage-strategy-item-metrics\manage-strategy-item-metrics.component.ts" />
+    <TypeScriptCompile Include="src\app\items-management\initiative\update-tracking\update-tracking.component.ts" />
+    <TypeScriptCompile Include="src\app\items-management\items-management.module.ts" />
+    <TypeScriptCompile Include="src\app\routes\meeting-management-routing.module.ts" />
+    <TypeScriptCompile Include="src\app\meeting-management\meeting-management.module.ts" />
+    <Content Include="src\app\meeting-management\meeting-manage\Attachments\meeting-attachments.component.html" />
+    <Content Include="src\app\meeting-management\meeting-manage\Details\meeting-item\meeting-item.component.html" />
+    <TypeScriptCompile Include="src\app\reducers\update-tracking-reducer.ts" />
+    <TypeScriptCompile Include="src\app\services\collaboration-management.service.ts" />
+    <TypeScriptCompile Include="src\app\services\http-client.ts" />
+    <TypeScriptCompile Include="src\app\reference\reference.component.ts" />
+    <TypeScriptCompile Include="src\app\services\strategy-item.service.ts" />
+    <TypeScriptCompile Include="src\app\shared\collaboration\related-documents\related-documents.component.ts" />
+    <TypeScriptCompile Include="src\app\shared\collaboration\related-links\related-links.component.ts" />
+    <TypeScriptCompile Include="src\app\shared\custom-dimension\custom-dimension.component.ts" />
+    <TypeScriptCompile Include="src\app\shared\date-pipe\date-pipe.ts" />
+    <TypeScriptCompile Include="src\app\meeting-management\meeting-manage\manage-meeting.component.ts" />
+    <Content Include="src\app\meeting-management\meeting-manage\manage-meeting.component.html" />
+    <Content Include="src\app\meeting-management\meeting-manage\mom-action-items\manage-action-item.component.html" />
+    <Content Include="src\app\meeting-management\meeting-manage\mom-action-items\mom-action-items.component.html" />
+    <Content Include="src\app\meeting-management\meetings-listing\meeting-card\meeting-card.component.html" />
+    <Content Include="src\app\meeting-management\meetings-listing\meetings-listing.component.html" />
+    <TypeScriptCompile Include="src\app\meeting-management\meeting-manage\Attachments\meeting-attachments.component.ts" />
+    <TypeScriptCompile Include="src\app\meeting-management\meeting-manage\Details\meeting-item\meeting-item.component.ts" />
+    <TypeScriptCompile Include="src\app\meeting-management\meeting-manage\mom-action-items\manage-action-item.component.ts" />
+    <TypeScriptCompile Include="src\app\meeting-management\meeting-manage\mom-action-items\mom-action-items.component.ts" />
+    <TypeScriptCompile Include="src\app\meeting-management\meetings-listing\meeting-card\meeting-card.component.ts" />
+    <TypeScriptCompile Include="src\app\meeting-management\meetings-listing\meetings-listing.component.ts" />
+    <Content Include="src\app\modules\gantt-chart\barchart\barchart.component.css" />
+    <Content Include="src\app\modules\gantt-chart\barchart\barchart.component.html" />
+    <Content Include="src\app\modules\gantt-chart\Docs\Case1.png" />
+    <Content Include="src\app\modules\gantt-chart\Docs\Case2.png" />
+    <Content Include="src\app\modules\gantt-chart\gantt-chart.component.css" />
+    <Content Include="src\app\modules\gantt-chart\gantt-chart.component.html" />
+    <Content Include="src\app\my-dashboard\favorites\favorites.component.html" />
+    <Content Include="src\app\high-level-dashboards\overview\Featured-KPI\featured-kpi-component.html" />
+    <Content Include="src\app\high-level-dashboards\overview\Featured-KPI\kpi-popup.component.html" />
+    <Content Include="src\app\high-level-dashboards\overview\featured-initiatives\featured-initiatives.component.html" />
+    <Content Include="src\app\high-level-dashboards\overview\featured-initiatives\initiative-list-popup.component.html" />
+    <Content Include="src\app\high-level-dashboards\overview\kpis-initiatives-charts\kpis-initiatives-charts.component.html" />
+    <Content Include="src\app\high-level-dashboards\overview\organization-general-details\deparmtents.component.html" />
+    <Content Include="src\app\high-level-dashboards\overview\organization-general-details\organization-unit-details.component.html" />
+    <Content Include="src\app\high-level-dashboards\overview\organization-general-details\organization-units-listing.component.html" />
+    <Content Include="src\app\my-dashboard\owned-items\owned-items.component.html" />
+    <Content Include="src\app\high-level-dashboards\overview\performance-chart\performance-chart.component.html" />
+    <Content Include="src\app\high-level-dashboards\strategy-item-sidebar\strategy-item-sidebar.component.html" />
+    <Content Include="src\app\high-level-dashboards\overview\overview-dashboard.component.html" />
+    <Content Include="src\app\high-level-dashboards\overview\financial-details\financial-details-popup.component.html" />
+    <Content Include="src\app\high-level-dashboards\overview\total-financial\total-financial.component.html" />
+    <Content Include="src\app\objective-dashboard\objective-dashboard.component.html" />
+    <Content Include="src\app\item-level-dashboards\perspective-dashboard\perspective-dashboard.component.html" />
+    <Content Include="src\app\reference\reference.component.css" />
+    <Content Include="src\app\reference\reference.html" />
+    <Content Include="src\app\shared\data-approval\kpi-data-approval\kpi-data-approval.html" />
+    <Content Include="src\app\shared\data-approval\metric-data-approval\metric-data-approval.html" />
+    <Content Include="src\app\shared\data-entry\kpi-data\kpi-data.component.html" />
+    <Content Include="src\app\shared\data-entry\measure-data\measure-data.html" />
+    <Content Include="src\app\shared\data-entry\metric-data\metric-data.html" />
+    <Content Include="src\app\shared\floating-menu\floating-menu.component.html" />
+    <Content Include="src\app\shared\item-cards\initiative-card\initiative-card.component.html" />
+    <Content Include="src\app\shared\item-cards\kpi-card\kpi-card.component.html" />
+    <Content Include="src\app\shared\item-list\initiative-list\initiative-list.component.html" />
+    <Content Include="src\app\shared\item-list\kpi-list\kpi-list.component.html" />
+    <Content Include="src\app\shared\item-meetings\item-meetings.component.html" />
+    <Content Include="src\app\shared\loader\loader.component.css" />
+    <Content Include="src\app\shared\strategy-item-meta-data\milestones-meta-data\milestones-meta-data.component.html" />
+    <Content Include="src\app\shared\structure-filter\structure-nodes-filter.component.html" />
+    <Content Include="src\app\shared\time-periods\time-periods.component.html" />
+    <Content Include="src\app\shared\time-selector\time-selector.component.html" />
+    <Content Include="src\app\shared\tree-view\tree-view.component.html" />
+    <Content Include="src\assets\fonts\DroidSansArabic\DroidSans-Bold.svg" />
+    <Content Include="src\assets\fonts\DroidSansArabic\DroidSansArabic.svg" />
+    <Content Include="src\assets\img\icons\adaa-logo.png" />
+    <Content Include="src\assets\img\icons\add.png" />
+    <Content Include="src\assets\img\icons\approved-with-rejected-cr-icon.png" />
+    <Content Include="src\assets\img\icons\budget-1.png" />
+    <Content Include="src\assets\img\icons\budget-2.png" />
+    <Content Include="src\assets\img\icons\CACHE.png" />
+    <Content Include="src\assets\img\icons\calendar.png" />
+    <Content Include="src\assets\img\icons\cards-view-icons.png" />
+    <Content Include="src\assets\img\icons\chartsIcon.png" />
+    <Content Include="src\assets\img\icons\circle.png" />
+    <Content Include="src\assets\img\icons\columnChartIco.png" />
+    <Content Include="src\assets\img\icons\Comparison.png" />
+    <Content Include="src\assets\img\icons\Consolidated.png" />
+    <Content Include="src\assets\img\icons\create.png" />
+    <Content Include="src\assets\img\icons\Cube.png" />
+    <Content Include="src\assets\img\icons\Data.png" />
+    <Content Include="src\assets\img\icons\departmentsKPIIcon.png" />
+    <Content Include="src\assets\img\icons\donutChartIco.png" />
+    <Content Include="src\assets\img\icons\edit.png" />
+    <Content Include="src\assets\img\icons\editFile.png" />
+    <Content Include="src\assets\img\icons\excel.png" />
+    <Content Include="src\assets\img\icons\floated-button.png" />
+    <Content Include="src\assets\img\icons\Folder.png" />
+    <Content Include="src\assets\img\icons\gray-document-icon.png" />
+    <Content Include="src\assets\img\icons\gray-folder-icon.png" />
+    <Content Include="src\assets\img\icons\grid-view-icons.png" />
+    <Content Include="src\assets\img\icons\Guage\Gauge_NA.png" />
+    <Content Include="src\assets\img\icons\Guage\Gauge_ND.png" />
+    <Content Include="src\assets\img\icons\Guage\Grey_Gauge.png" />
+    <Content Include="src\assets\img\icons\Initiative.png" />
+    <Content Include="src\assets\img\icons\initiativeILrgIco.png" />
+    <Content Include="src\assets\img\icons\InitiativesCardsIcons.png" />
+    <Content Include="src\assets\img\icons\Intiative-card-icons.png" />
+    <Content Include="src\assets\img\icons\KPI.png" />
+    <Content Include="src\assets\img\icons\KPILrgIco.png" />
+    <Content Include="src\assets\img\icons\layersIco.png" />
+    <Content Include="src\assets\img\icons\LICENSE.png" />
+    <Content Include="src\assets\img\icons\lineChartIco.png" />
+    <Content Include="src\assets\img\icons\listChartIco.png" />
+    <Content Include="src\assets\img\icons\Logo.png" />
+    <Content Include="src\assets\img\icons\main-menu-sub-icons.png" />
+    <Content Include="src\assets\img\icons\METRIC.png" />
+    <Content Include="src\assets\img\icons\metrics-icon.png" />
+    <Content Include="src\assets\img\icons\milestone_icon.png" />
+    <Content Include="src\assets\img\icons\Non-Numeric.png" />
+    <Content Include="src\assets\img\icons\Objective.png" />
+    <Content Include="src\assets\img\icons\onTrackIco.png" />
+    <Content Include="src\assets\img\icons\onTrackIcoColor.png" />
+    <Content Include="src\assets\img\icons\opjSmallIco.png" />
+    <Content Include="src\assets\img\icons\organization.png" />
+    <Content Include="src\assets\img\icons\owner.png" />
+    <Content Include="src\assets\img\icons\pdf.png" />
+    <Content Include="src\assets\img\icons\plus.png" />
+    <Content Include="src\assets\img\icons\popupControlIco.png" />
+    <Content Include="src\assets\img\icons\save-as-draft-icon.png" />
+    <Content Include="src\assets\img\icons\selectedIco.png" />
+    <Content Include="src\assets\img\icons\side-menu-icons.png" />
+    <Content Include="src\assets\img\icons\sql.png" />
+    <Content Include="src\assets\img\icons\status-schedule-sprite.png" />
+    <Content Include="src\assets\img\icons\statusKPIIcon.png" />
+    <Content Include="src\assets\img\icons\STRATEGIES.png" />
+    <Content Include="src\assets\img\icons\Strategy.png" />
+    <Content Include="src\assets\img\icons\themesIco.png" />
+    <Content Include="src\assets\img\icons\top-nav-icons.png" />
+    <Content Include="src\assets\img\icons\uploadFile.png" />
+    <Content Include="src\assets\img\icons\user.png" />
+    <Content Include="src\assets\img\icons\word.png" />
+    <Content Include="src\assets\img\icons\xls.png" />
+    <Content Include="src\assets\scripts\base64.js" />
+    <Content Include="src\assets\scripts\custom.js" />
+    <Content Include="src\assets\scripts\FileSaver.js" />
+    <Content Include="src\assets\scripts\FileSaver.min.js" />
+    <Content Include="src\assets\scripts\jquery.base64.js" />
+    <Content Include="src\assets\scripts\jspdf.js" />
+    <Content Include="src\assets\scripts\scripts.js" />
+    <Content Include="src\assets\scripts\sprintf.js" />
+    <Content Include="src\assets\scripts\tableExport.js" />
+    <Content Include="src\assets\styles\css\app_ar.css" />
+    <Content Include="src\assets\styles\css\app_en.css" />
+    <Content Include="src\app\my-dashboard\my-dashboard.component.html" />
+    <Content Include="src\app\shared\associated-to\associated-to.component.html" />
+    <Content Include="src\app\shared\Detail-Actions\Detail-Actions.component.html" />
+    <Content Include="src\app\shared\orgnization-unit-filter\organization-unit-filter.component.html" />
+    <Content Include="src\app\shared\strategy-item-with-score-and-childrenlist\strategy-item-with-score-and-childrenlist.component.html" />
+    <Content Include="src\app\shared\time-filter\time-filter.html" />
+    <Content Include="src\app\strategic-dashboard\strategy\list-plans.component.html" />
+    <Content Include="src\app\shared\item-cards\objective-card\objective-card.component.html" />
+    <Content Include="src\app\shared\item-cards\perspective-card\perspective-card.component.html" />
+    <Content Include="src\app\shared\strategy-plan-filter\strategy-plan-filter.component.html" />
+    <Content Include="src\app\strategic-dashboard\strategy\manage-strategy-item.html" />
+    <Content Include="src\app\strategic-dashboard\strategy\strategic-dashboard.component.html" />
+    <Content Include="src\app\shared\item-cards\theme-card\theme-card.component.html" />
+    <Content Include="src\app\test-page\test-page.html" />
+    <!-- <Content Include="entry.js" /> -->
+    <Content Include="karma.conf.js" />
+    <Content Include="protractor.conf.js" />
+    <Content Include="src\favicon.ico" />
+    <TypeScriptCompile Include="src\app\high-level-dashboards\perspective-theme-queue-view\perspective-theme-queue-view.component.ts" />
+    <TypeScriptCompile Include="src\app\items-management\initiative\manage-initiative-hierarchy\manage-initiative-hierarchy.component.ts" />
+    <TypeScriptCompile Include="src\app\items-management\initiative\manage-initiative-hierarchy\strategy-item-children-tabs\calculation-method-weight.component.ts" />
+    <TypeScriptCompile Include="src\app\items-management\initiative\manage-initiative-hierarchy\strategy-item-children-tabs\milestones-tab.component.ts" />
+    <TypeScriptCompile Include="src\app\models\StrategyItem\save-strategy-item-with-children-dto.model.ts" />
+    <TypeScriptCompile Include="src\app\high-level-dashboards\overview\Featured-KPI\featured-kpi.component.ts" />
+    <TypeScriptCompile Include="src\app\high-level-dashboards\overview\featured-initiatives\featured-initiatives.component.ts" />
+    <TypeScriptCompile Include="src\app\high-level-dashboards\overview\featured-initiatives\initiative-list-popup.component.ts" />
+    <TypeScriptCompile Include="src\app\high-level-dashboards\overview\Featured-KPI\kpi-popup.component.ts" />
+    <TypeScriptCompile Include="src\app\high-level-dashboards\overview\kpis-initiatives-charts\kpis-initiatives-charts.component.ts" />
+    <TypeScriptCompile Include="src\app\routes\my-dashboard-routing.module.ts" />
+    <TypeScriptCompile Include="src\app\high-level-dashboards\overview\organization-general-details\departments.component.ts" />
+    <TypeScriptCompile Include="src\app\high-level-dashboards\overview\organization-general-details\organization-units-listing.component.ts" />
+    <TypeScriptCompile Include="src\app\high-level-dashboards\overview\organization-general-details\organization-units-shared.service.ts" />
+    <TypeScriptCompile Include="src\app\high-level-dashboards\overview\performance-chart\performance-chart.component.ts" />
+    <TypeScriptCompile Include="src\app\high-level-dashboards\strategy-item-sidebar\strategy-item-sidebar.component.ts" />
+    <TypeScriptCompile Include="src\app\high-level-dashboards\overview\overview-dashboard.component.ts" />
+    <TypeScriptCompile Include="src\app\routes\objective-dashboard-routing.module.ts" />
+    <TypeScriptCompile Include="src\app\objective-dashboard\objective-dashboard.component.ts" />
+    <TypeScriptCompile Include="src\app\objective-dashboard\objective-dashboard.module.ts" />
+    <TypeScriptCompile Include="src\app\item-level-dashboards\perspective-dashboard\perspective-dashboard.component.ts" />
+    <TypeScriptCompile Include="src\app\high-level-dashboards\overview\financial-details\financial-details-popup.component.ts" />
+    <TypeScriptCompile Include="src\app\high-level-dashboards\overview\total-financial\total-financial.component.ts" />
+    <TypeScriptCompile Include="src\app\services\initiative-hierarchy-events.service.ts" />
+    <TypeScriptCompile Include="src\app\services\kpi-listing-events.service.ts" />
+    <TypeScriptCompile Include="src\app\services\meeting-management.service.ts" />
+    <TypeScriptCompile Include="src\app\shared\data-approval\kpi-data-approval\kpi-data-approval.component.ts" />
+    <TypeScriptCompile Include="src\app\shared\data-approval\metric-data-approval\metric-data-approval.component.ts" />
+    <TypeScriptCompile Include="src\app\services\metric-data.service.ts" />
+    <TypeScriptCompile Include="src\app\shared\data-entry\kpi-data\kpi-data.component.ts" />
+    <TypeScriptCompile Include="src\app\shared\data-entry\measure-data\measure-data.component.ts" />
+    <TypeScriptCompile Include="src\app\shared\data-entry\metric-data\metric-data.component.ts" />
+    <TypeScriptCompile Include="src\app\shared\floating-menu\floating-menu.component.ts" />
+    <TypeScriptCompile Include="src\app\shared\item-list\initiative-list\initiative-list.component.ts" />
+    <TypeScriptCompile Include="src\app\shared\item-list\kpi-list\kpi-list.component.ts" />
+    <TypeScriptCompile Include="src\app\shared\item-meetings\item-meetings.component.ts" />
+    <TypeScriptCompile Include="src\app\shared\dimensions-members-selector\dimensions-members-selector.component.ts" />
+    <TypeScriptCompile Include="src\app\shared\nav-tabs\nav-tabs.component.ts" />
+    <TypeScriptCompile Include="src\app\shared\ngb-date-fr-parser-formatter.ts" />
+    <TypeScriptCompile Include="src\app\shared\no-data\no-data.component.ts" />
+    <TypeScriptCompile Include="src\app\shared\objective-scorecard-tabular\objective-scorecard-tabular.component.ts" />
+    <TypeScriptCompile Include="src\app\shared\pending-strategy-items-filter\pending-strategy-items-filter.component.ts" />
+    <TypeScriptCompile Include="src\app\shared\pipes\decimal-number-pre-validate.pipe.ts" />
+    <TypeScriptCompile Include="src\app\shared\pipes\ontrack-search.pipe.ts" />
+    <TypeScriptCompile Include="src\app\shared\search-metric\search-metric.component.ts" />
+    <TypeScriptCompile Include="src\app\shared\search-strategy-item\search-strategy-item.component.ts" />
+    <TypeScriptCompile Include="src\app\shared\strategy-item-meta-data\milestones-meta-data\milestones-meta-data.component.ts" />
+    <TypeScriptCompile Include="src\app\shared\supporting-documents\supporting-documents.component.ts" />
+    <TypeScriptCompile Include="src\app\shared\time-filter-multiselect\time-filter-multiselect.component.ts" />
+    <TypeScriptCompile Include="src\app\shared\time-filter\frequencies.ts" />
+    <TypeScriptCompile Include="src\app\shared\time-filter\time-filter-store.ts" />
+    <TypeScriptCompile Include="src\app\shared\time-filter\time-filter.service.ts" />
+    <TypeScriptCompile Include="src\app\shared\time-filter\time-filter.ts" />
+    <TypeScriptCompile Include="src\app\shared\time-filter\update-frequency.ts" />
+    <TypeScriptCompile Include="src\app\shared\time-selector\time-selector.component.ts" />
+    <TypeScriptCompile Include="src\app\shared\topbar-filter\topbar-filter.component.ts" />
+    <TypeScriptCompile Include="src\app\routes\strategic-dashboard-routing.module.ts" />
+    <TypeScriptCompile Include="src\app\strategy-item\add-linking-strategy-items\add-linking-strategy-items.component.ts" />
+    <TypeScriptCompile Include="src\app\strategy-item\contributing-items\contributing-items.component.ts" />
+    <TypeScriptCompile Include="src\app\strategy-item\contribution-source\contribution-source.component.ts" />
+    <TypeScriptCompile Include="src\app\strategy-item\default-metadata\default-metadata.component.ts" />
+    <TypeScriptCompile Include="src\app\strategy-item\dynamic.component.ts" />
+    <TypeScriptCompile Include="src\app\strategy-item\epm-integration\epm-integration.component.ts" />
+    <TypeScriptCompile Include="src\app\strategy-item\IStrategy-Item.ts" />
+    <TypeScriptCompile Include="src\app\strategy-item\linked-issues\linked-issues.component.ts" />
+    <TypeScriptCompile Include="src\app\strategy-item\linked-milestones\linked-milestones.component.ts" />
+    <TypeScriptCompile Include="src\app\strategy-item\linked-milestones\manage-linked-milestones\manage-linked-milestones.component.ts" />
+    <TypeScriptCompile Include="src\app\strategy-item\linked-outputs\linked-outputs.component.ts" />
+    <TypeScriptCompile Include="src\app\strategy-item\linked-outputs\manage-linked-output\manage-linked-output.component.ts" />
+    <TypeScriptCompile Include="src\app\strategy-item\linked-risks\linked-risks.component.ts" />
+    <TypeScriptCompile Include="src\app\strategy-item\linked-strategy-items\linked-strategy-items.component.ts" />
+    <TypeScriptCompile Include="src\app\strategy-item\linked-tasks-milestones\linked-tasks-milestones.component.ts" />
+    <TypeScriptCompile Include="src\app\strategy-item\linking-initiatives\linking-initiatives.component.ts" />
+    <TypeScriptCompile Include="src\app\strategy-item\linking-kpis\add-linking-kpis\add-linking-kpis.component.ts" />
+    <TypeScriptCompile Include="src\app\strategy-item\linking-kpis\linking-kpis.component.ts" />
+    <TypeScriptCompile Include="src\app\strategy-item\metadata\metadata.component.ts" />
+    <TypeScriptCompile Include="src\app\strategy-item\metadata\metadata.model.ts" />
+    <TypeScriptCompile Include="src\app\strategy-item\metric\metric.component.ts" />
+    <TypeScriptCompile Include="src\app\strategy-item\quick-add\quick-add.component.ts" />
+    <TypeScriptCompile Include="src\app\strategy-item\strategy-item-parent\strategy-item-parent.component.ts" />
+    <TypeScriptCompile Include="src\app\services\strategy-item-planning.service.ts" />
+    <TypeScriptCompile Include="src\app\routes\strategy-item-routing.module.ts" />
+    <TypeScriptCompile Include="src\app\strategy-item\strategy-item.module.ts" />
+    <TypeScriptCompile Include="src\app\strategy-item\strategy-item.component.ts" />
+    <TypeScriptCompile Include="src\app\shared\pipes\ontrack-items-name-search.pipe.ts" />
+    <TypeScriptCompile Include="src\app\strategy-item\strategy-plan-tree\strategy-plan-tree.component.ts" />
+    <TypeScriptCompile Include="src\app\strategy-item\strategy-planning\strategy-planning.component.ts" />
+    <TypeScriptCompile Include="src\app\strategy-item\linked-tasks-milestones\manage-tasks-milestones\manage-tasks-milestones.component.ts" />
+    <TypeScriptCompile Include="src\app\strategy-item\tree-linking\tree-linking.component.ts" />
+    <TypeScriptCompile Include="src\app\strategy-map\manage-strategy-map.component.ts" />
+    <TypeScriptCompile Include="src\app\strategy-map\strategy-map-dashboard\strategy-map-dashboard.component.ts" />
+    <TypeScriptCompile Include="src\app\strategy-map\strategy-map-items-selector\strategy-map-items-selector.component.ts" />
+    <TypeScriptCompile Include="src\app\strategy-map\strategy-map.module.ts" />
+    <TypeScriptCompile Include="src\app\utilities\constants.ts" />
+    <Content Include="package.json" />
+    <Content Include="src\styles.css" />
+    <Content Include="tsconfig.json" />
+    <Content Include="..\..\Solution Items\GTM_GPM.snk">
+      <Link>GTM_GPM.snk</Link>
+    </Content>
+    <Content Include="src\app\configurations\config.json" />
+    <Content Include="src\assets\fonts\Lato\Lato-Black.ttf" />
+    <Content Include="src\assets\fonts\Lato\Lato-BlackItalic.ttf" />
+    <Content Include="src\assets\fonts\Lato\Lato-Bold.ttf" />
+    <Content Include="src\assets\fonts\Lato\Lato-BoldItalic.ttf" />
+    <Content Include="src\assets\fonts\Lato\Lato-Hairline.ttf" />
+    <Content Include="src\assets\fonts\Lato\Lato-HairlineItalic.ttf" />
+    <Content Include="src\assets\fonts\Lato\Lato-Heavy.ttf" />
+    <Content Include="src\assets\fonts\Lato\Lato-HeavyItalic.ttf" />
+    <Content Include="src\assets\fonts\Lato\Lato-Italic.ttf" />
+    <Content Include="src\assets\fonts\Lato\Lato-Light.ttf" />
+    <Content Include="src\assets\fonts\Lato\Lato-LightItalic.ttf" />
+    <Content Include="src\assets\fonts\Lato\Lato-Medium.ttf" />
+    <Content Include="src\assets\fonts\Lato\Lato-MediumItalic.ttf" />
+    <Content Include="src\assets\fonts\Lato\Lato-Regular.ttf" />
+    <Content Include="src\assets\fonts\Lato\Lato-Semibold.ttf" />
+    <Content Include="src\assets\fonts\Lato\Lato-SemiboldItalic.ttf" />
+    <Content Include="src\assets\fonts\Lato\Lato-Thin.ttf" />
+    <Content Include="src\assets\fonts\Lato\Lato-ThinItalic.ttf" />
+    <Content Include="src\assets\styles\sass\.sass-cache\17192dc529827391d5cd4887b96ea89810e74eef\_alert.scssc" />
+    <Content Include="src\assets\styles\sass\.sass-cache\17192dc529827391d5cd4887b96ea89810e74eef\_background-variant.scssc" />
+    <Content Include="src\assets\styles\sass\.sass-cache\17192dc529827391d5cd4887b96ea89810e74eef\_border-radius.scssc" />
+    <Content Include="src\assets\styles\sass\.sass-cache\17192dc529827391d5cd4887b96ea89810e74eef\_breakpoints.scssc" />
+    <Content Include="src\assets\styles\sass\.sass-cache\17192dc529827391d5cd4887b96ea89810e74eef\_buttons.scssc" />
+    <Content Include="src\assets\styles\sass\.sass-cache\17192dc529827391d5cd4887b96ea89810e74eef\_cards.scssc" />
+    <Content Include="src\assets\styles\sass\.sass-cache\17192dc529827391d5cd4887b96ea89810e74eef\_center-block.scssc" />
+    <Content Include="src\assets\styles\sass\.sass-cache\17192dc529827391d5cd4887b96ea89810e74eef\_clearfix.scssc" />
+    <Content Include="src\assets\styles\sass\.sass-cache\17192dc529827391d5cd4887b96ea89810e74eef\_forms.scssc" />
+    <Content Include="src\assets\styles\sass\.sass-cache\17192dc529827391d5cd4887b96ea89810e74eef\_gradients.scssc" />
+    <Content Include="src\assets\styles\sass\.sass-cache\17192dc529827391d5cd4887b96ea89810e74eef\_grid-framework.scssc" />
+    <Content Include="src\assets\styles\sass\.sass-cache\17192dc529827391d5cd4887b96ea89810e74eef\_grid.scssc" />
+    <Content Include="src\assets\styles\sass\.sass-cache\17192dc529827391d5cd4887b96ea89810e74eef\_hover.scssc" />
+    <Content Include="src\assets\styles\sass\.sass-cache\17192dc529827391d5cd4887b96ea89810e74eef\_image.scssc" />
+    <Content Include="src\assets\styles\sass\.sass-cache\17192dc529827391d5cd4887b96ea89810e74eef\_label.scssc" />
+    <Content Include="src\assets\styles\sass\.sass-cache\17192dc529827391d5cd4887b96ea89810e74eef\_list-group.scssc" />
+    <Content Include="src\assets\styles\sass\.sass-cache\17192dc529827391d5cd4887b96ea89810e74eef\_lists.scssc" />
+    <Content Include="src\assets\styles\sass\.sass-cache\17192dc529827391d5cd4887b96ea89810e74eef\_nav-divider.scssc" />
+    <Content Include="src\assets\styles\sass\.sass-cache\17192dc529827391d5cd4887b96ea89810e74eef\_pagination.scssc" />
+    <Content Include="src\assets\styles\sass\.sass-cache\17192dc529827391d5cd4887b96ea89810e74eef\_progress.scssc" />
+    <Content Include="src\assets\styles\sass\.sass-cache\17192dc529827391d5cd4887b96ea89810e74eef\_pulls.scssc" />
+    <Content Include="src\assets\styles\sass\.sass-cache\17192dc529827391d5cd4887b96ea89810e74eef\_reset-filter.scssc" />
+    <Content Include="src\assets\styles\sass\.sass-cache\17192dc529827391d5cd4887b96ea89810e74eef\_reset-text.scssc" />
+    <Content Include="src\assets\styles\sass\.sass-cache\17192dc529827391d5cd4887b96ea89810e74eef\_resize.scssc" />
+    <Content Include="src\assets\styles\sass\.sass-cache\17192dc529827391d5cd4887b96ea89810e74eef\_screen-reader.scssc" />
+    <Content Include="src\assets\styles\sass\.sass-cache\17192dc529827391d5cd4887b96ea89810e74eef\_size.scssc" />
+    <Content Include="src\assets\styles\sass\.sass-cache\17192dc529827391d5cd4887b96ea89810e74eef\_tab-focus.scssc" />
+    <Content Include="src\assets\styles\sass\.sass-cache\17192dc529827391d5cd4887b96ea89810e74eef\_table-row.scssc" />
+    <Content Include="src\assets\styles\sass\.sass-cache\17192dc529827391d5cd4887b96ea89810e74eef\_text-emphasis.scssc" />
+    <Content Include="src\assets\styles\sass\.sass-cache\17192dc529827391d5cd4887b96ea89810e74eef\_text-hide.scssc" />
+    <Content Include="src\assets\styles\sass\.sass-cache\17192dc529827391d5cd4887b96ea89810e74eef\_text-truncate.scssc" />
+    <Content Include="src\assets\styles\sass\.sass-cache\1f4b5c70351bf55cd498b7135c32874f2a1d4e23\_variables.scssc" />
+    <Content Include="src\assets\styles\sass\.sass-cache\5969d21ab4d47f362fad03f1da91a6d8266d7e8b\app.scssc" />
+    <Content Include="src\assets\styles\sass\.sass-cache\5969d21ab4d47f362fad03f1da91a6d8266d7e8b\_base.scssc" />
+    <Content Include="src\assets\styles\sass\.sass-cache\5969d21ab4d47f362fad03f1da91a6d8266d7e8b\_helpers.scssc" />
+    <Content Include="src\assets\styles\sass\.sass-cache\5969d21ab4d47f362fad03f1da91a6d8266d7e8b\_mixins.scssc" />
+    <Content Include="src\assets\styles\sass\.sass-cache\5969d21ab4d47f362fad03f1da91a6d8266d7e8b\_typography.scssc" />
+    <Content Include="src\assets\styles\sass\.sass-cache\5969d21ab4d47f362fad03f1da91a6d8266d7e8b\_variables.scssc" />
+    <Content Include="src\assets\styles\sass\.sass-cache\5a757cabc6174f62f901eab95e155c7307800b31\_jquery.scrollbar.scssc" />
+    <Content Include="src\assets\styles\sass\.sass-cache\65d22df4a91b574a85564d2391b55c8369d4c646\_filters-bar.scssc" />
+    <Content Include="src\assets\styles\sass\.sass-cache\65d22df4a91b574a85564d2391b55c8369d4c646\_main-listing-card.scssc" />
+    <Content Include="src\assets\styles\sass\.sass-cache\65d22df4a91b574a85564d2391b55c8369d4c646\_main-nav.scssc" />
+    <Content Include="src\assets\styles\sass\.sass-cache\65d22df4a91b574a85564d2391b55c8369d4c646\_top-nav.scssc" />
+    <Content Include="src\assets\styles\sass\.sass-cache\6633953830a4694abb5b2719dd24b1259c654d20\app.scssc" />
+    <Content Include="src\assets\styles\sass\.sass-cache\6633953830a4694abb5b2719dd24b1259c654d20\_base.scssc" />
+    <Content Include="src\assets\styles\sass\.sass-cache\6633953830a4694abb5b2719dd24b1259c654d20\_variables.scssc" />
+    <Content Include="src\assets\styles\sass\.sass-cache\6c3a743be2395cb911b70cf76a6a0c3ba607b563\app.scssc" />
+    <Content Include="src\assets\styles\sass\.sass-cache\6c3a743be2395cb911b70cf76a6a0c3ba607b563\_base.scssc" />
+    <Content Include="src\assets\styles\sass\.sass-cache\6c3a743be2395cb911b70cf76a6a0c3ba607b563\_helpers.scssc" />
+    <Content Include="src\assets\styles\sass\.sass-cache\6c3a743be2395cb911b70cf76a6a0c3ba607b563\_mixins.scssc" />
+    <Content Include="src\assets\styles\sass\.sass-cache\6c3a743be2395cb911b70cf76a6a0c3ba607b563\_typography.scssc" />
+    <Content Include="src\assets\styles\sass\.sass-cache\6c3a743be2395cb911b70cf76a6a0c3ba607b563\_variables.scssc" />
+    <Content Include="src\assets\styles\sass\.sass-cache\7b1b2761597efb489a2aab2cd829040c17de6681\_variables.scssc" />
+    <Content Include="src\assets\styles\sass\.sass-cache\dca5907993624a19cbd3edac91bd1278dbc00977\_jquery.scrollbar.scssc" />
+    <Content Include="src\assets\styles\sass\.sass-cache\dd497f64b6072cb9c206a6959c85e2f346f68072\_mixins.scssc" />
+    <Content Include="src\assets\styles\sass\.sass-cache\dd497f64b6072cb9c206a6959c85e2f346f68072\_variables.scssc" />
+    <Content Include="src\assets\styles\sass\.sass-cache\f51169380842dcf94dfb2d2e57e56b8503d58e54\_filters-bar.scssc" />
+    <Content Include="src\assets\styles\sass\.sass-cache\f51169380842dcf94dfb2d2e57e56b8503d58e54\_main-listing-card.scssc" />
+    <Content Include="src\assets\styles\sass\.sass-cache\f51169380842dcf94dfb2d2e57e56b8503d58e54\_main-nav.scssc" />
+    <Content Include="src\assets\styles\sass\.sass-cache\f51169380842dcf94dfb2d2e57e56b8503d58e54\_side-nav.scssc" />
+    <Content Include="src\assets\styles\sass\.sass-cache\f51169380842dcf94dfb2d2e57e56b8503d58e54\_top-nav.scssc" />
+    <Content Include="src\assets\styles\sass\app.css.map" />
+    <Content Include="src\assets\styles\sass\app.scss" />
+    <Content Include="src\assets\styles\sass\components\_filters-bar.scss" />
+    <Content Include="src\assets\styles\sass\shared\main-listing-card\_main-listing-card.scss" />
+    <Content Include="src\assets\styles\sass\shared\main-nav\_main-nav.scss" />
+    <Content Include="src\assets\styles\sass\components\_top-nav.scss" />
+    <Content Include="src\assets\styles\sass\vendors\_jquery.scrollbar.scss" />
+    <Content Include="src\assets\styles\sass\shared\_base.scss" />
+    <Content Include="src\assets\styles\sass\shared\_helpers.scss" />
+    <Content Include="src\assets\styles\sass\shared\_mixins.scss" />
+    <Content Include="src\assets\styles\sass\shared\_variables.scss" />
+    <Content Include="src\assets\lang\ar-SA.json" />
+    <Content Include="src\assets\lang\en-US.json" />
+    <Content Include="src\assets\styles\sass\app_ar.scss" />
+    <Content Include="src\assets\styles\sass\app_en.scss" />
+    <Content Include="src\assets\styles\sass\shared\forms\_forms.scss" />
+    <Content Include="src\assets\styles\sass\shared\highcharts\_highcharts.scss" />
+    <Content Include="src\assets\styles\sass\components\kpi-management\_manage-kpis.scss" />
+    <Content Include="src\assets\styles\sass\shared\modals\_modals.scss" />
+    <Content Include="src\assets\styles\sass\components\my-dashboard\_my-dashboard.scss" />
+    <Content Include="src\assets\styles\sass\vendors\_jQuery-plugin-progressbar.scss" />
+    <Content Include="src\assets\styles\sass\shared\_variables_ar.scss" />
+    <Content Include="src\assets\styles\sass\shared\_variables_en.scss" />
+    <Content Include="src\assets\fonts\DroidSansArabic\DroidSans-Bold.eot" />
+    <Content Include="src\assets\fonts\DroidSansArabic\DroidSans-Bold.ttf" />
+    <Content Include="src\assets\fonts\DroidSansArabic\DroidSans-Bold.woff" />
+    <Content Include="src\assets\fonts\DroidSansArabic\DroidSansArabic.eot" />
+    <Content Include="src\assets\fonts\DroidSansArabic\DroidSansArabic.ttf" />
+    <Content Include="src\assets\fonts\DroidSansArabic\DroidSansArabic.woff" />
+    <Content Include="src\app\modules\gantt-chart\Docs\Gantt chart.docx" />
+    <Content Include="src\app\modules\gantt-chart\Docs\Rules.md" />
+    <Content Include="src\app\shared\search-kpi\search-kpi.component.html" />
+    <Content Include="src\assets\styles\css\app_ar.css.map" />
+    <Content Include="src\assets\styles\css\app_en.css.map" />
+    <Content Include="src\assets\styles\sass\components\overview-dashboard\_budget-expenditure.scss" />
+    <Content Include="src\assets\styles\sass\components\overview-dashboard\_featured.scss" />
+    <Content Include="src\assets\styles\sass\components\overview-dashboard\_kpis-initiatives.scss" />
+    <Content Include="src\assets\styles\sass\components\overview-dashboard\_organization-performance.scss" />
+    <Content Include="src\assets\styles\sass\components\overview-dashboard\_orgunit-name.scss" />
+    <Content Include="src\assets\styles\sass\components\overview-dashboard\_overview-dashboard.scss" />
+    <Content Include="src\assets\styles\sass\components\overview-dashboard\_perspectives.scss" />
+    <Content Include="src\assets\styles\sass\components\overview-dashboard\_subunits.scss" />
+    <Content Include="src\assets\styles\sass\shared\pagination\_pagination.scss" />
+    <Content Include="src\assets\styles\sass\components\_score-cards.scss" />
+    <Content Include="src\app\shared\topbar-filter\topbar-filter.component.html" />
+    <Content Include="src\assets\styles\sass\components\perspective-dashboard\_perspective-dashboard.scss" />
+    <Content Include="src\assets\styles\sass\components\financial-dashboard\_financial-dashboard.scss" />
+    <Content Include="src\assets\styles\sass\components\objective-dashboard\_objective-dashboard.scss" />
+    <Content Include="src\assets\fonts\Roboto\Roboto-Bold1.eot" />
+    <Content Include="src\assets\fonts\Roboto\Roboto-Bold1.ttf" />
+    <Content Include="src\assets\fonts\Roboto\Roboto-Bold1.woff" />
+    <Content Include="src\assets\fonts\Roboto\Roboto-Bold1.woff2" />
+    <Content Include="src\assets\fonts\Roboto\Roboto-Regular1.eot" />
+    <Content Include="src\assets\fonts\Roboto\Roboto-Regular1.ttf" />
+    <Content Include="src\assets\fonts\Roboto\Roboto-Regular1.woff" />
+    <Content Include="src\assets\fonts\Roboto\Roboto-Regular1.woff2" />
+    <Content Include="src\assets\fonts\Cairo\Cairo-Bold1.eot" />
+    <Content Include="src\assets\fonts\Cairo\Cairo-Bold1.ttf" />
+    <Content Include="src\assets\fonts\Cairo\Cairo-Bold1.woff" />
+    <Content Include="src\assets\fonts\Cairo\Cairo-Bold1.woff2" />
+    <Content Include="src\assets\fonts\Cairo\Cairo-Regular1.eot" />
+    <Content Include="src\assets\fonts\Cairo\Cairo-Regular1.ttf" />
+    <Content Include="src\assets\fonts\Cairo\Cairo-Regular1.woff" />
+    <Content Include="src\assets\fonts\Cairo\Cairo-Regular1.woff2" />
+    <Content Include="src\assets\styles\sass\components\data-entry\_data-entry.scss" />
+    <Content Include="src\assets\styles\sass\components\meeting-management\_meeting-management.scss" />
+    <Content Include="src\assets\styles\sass\components\meeting-management\_meeting-card.scss" />
+    <Content Include="src\assets\styles\sass\components\sub-initiative\_sub-initiative.scss" />
+    <Content Include="src\assets\styles\sass\shared\floating-menu\_floating-menu.scss" />
+    <Content Include="src\assets\styles\sass\shared\buttons\_buttons.scss" />
+    <Content Include="src\assets\styles\sass\components\org-chart\_jquery.orgchart.scss" />
+    <Content Include="e2e\tsconfig.e2e.json" />
+    <Content Include=".angular-cli.json" />
+    <Content Include=".editorconfig" />
+    <Content Include="README.md" />
+    <Content Include="tslint.json" />
+    <Content Include="src\tsconfig.app.json" />
+    <Content Include="src\tsconfig.spec.json" />
+    <Content Include="src\assets\styles\sass\components\manage-initiative\_manage-initiative.scss" />
+    <TypeScriptCompile Include="e2e\app.e2e-spec.ts" />
+    <TypeScriptCompile Include="e2e\app.po.ts" />
+    <TypeScriptCompile Include="src\environments\environment.ui.ts" />
+    <TypeScriptCompile Include="src\polyfills.ts" />
+    <TypeScriptCompile Include="src\test.ts" />
+    <TypeScriptCompile Include="src\typings.d.ts" />
+    <TypeScriptCompile Include="src\vendor.ts" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <TypeScriptCompile Include="src\app\administration\administration.component.ts" />
+    <TypeScriptCompile Include="src\app\configurations\config.service.ts" />
+    <TypeScriptCompile Include="src\app\models\StrategyItem\initiative-dashboard.model.ts" />
+    <TypeScriptCompile Include="src\app\models\StrategyItem\objective-item.model.ts" />
+    <TypeScriptCompile Include="src\app\models\StrategyItem\perspective-item.model.ts" />
+    <TypeScriptCompile Include="src\app\models\StrategyItem\strategy-item.model.ts" />
+    <TypeScriptCompile Include="src\app\models\time-filter.model.ts" />
+    <TypeScriptCompile Include="src\app\models\tree-node.model.ts" />
+    <TypeScriptCompile Include="src\app\services\data-integration.service.ts" />
+    <TypeScriptCompile Include="src\app\shared\alert\alert.component.ts" />
+    <TypeScriptCompile Include="src\app\services\services.module.ts" />
+    <TypeScriptCompile Include="src\app\shared\directives\card-animation.ts" />
+    <TypeScriptCompile Include="src\app\high-level-dashboards\high-level-dashboards.module.ts" />
+    <TypeScriptCompile Include="src\app\high-level-dashboards\scorecards\scorecard.component.ts" />
+    <TypeScriptCompile Include="src\app\login\login.component.ts" />
+    <TypeScriptCompile Include="src\app\models\index.ts" />
+    <TypeScriptCompile Include="src\app\models\User\user.ts" />
+    <TypeScriptCompile Include="src\app\modules\gantt-chart\barchart\barchart.component.ts" />
+    <TypeScriptCompile Include="src\app\modules\gantt-chart\gantt-chart.component.ts" />
+    <TypeScriptCompile Include="src\app\modules\gantt-chart\gantt-chart.module.ts" />
+    <TypeScriptCompile Include="src\app\my-dashboard\my-dashboard.module.ts" />
+    <TypeScriptCompile Include="src\app\models\gantt.model.ts" />
+    <TypeScriptCompile Include="src\app\reducers\structure-folders-reducer.ts" />
+    <TypeScriptCompile Include="src\app\services\alert.service.ts" />
+    <TypeScriptCompile Include="src\app\services\authentication.service.ts" />
+    <TypeScriptCompile Include="src\app\services\index.ts" />
+    <TypeScriptCompile Include="src\app\reducers\query-parameters.ts" />
+    <TypeScriptCompile Include="src\app\services\kpi-management.service.ts" />
+    <TypeScriptCompile Include="src\app\reducers\time-filter-frequency-reducer.ts" />
+    <TypeScriptCompile Include="src\app\services\organization-unit.service.ts" />
+    <TypeScriptCompile Include="src\app\services\query-parameters.service.ts" />
+    <TypeScriptCompile Include="src\app\services\strategy-management.service.ts" />
+    <TypeScriptCompile Include="src\app\my-dashboard\favorites\favorites.component.ts" />
+    <TypeScriptCompile Include="src\app\high-level-dashboards\overview\organization-general-details\organization-unit-details.component.ts" />
+    <TypeScriptCompile Include="src\app\my-dashboard\owned-items\owned-items.component.ts" />
+    <TypeScriptCompile Include="src\app\reducers\default-strategy-plan-reducer.ts" />
+    <TypeScriptCompile Include="src\app\reducers\general-filter-reducer.ts" />
+    <TypeScriptCompile Include="src\app\reducers\organization-units-reducer.ts" />
+    <TypeScriptCompile Include="src\app\reducers\strategy-plan-filter-reducer.ts" />
+    <TypeScriptCompile Include="src\app\reducers\structure-node-filter-reducer.ts" />
+    <TypeScriptCompile Include="src\app\services\structure-management.service.ts" />
+    <TypeScriptCompile Include="src\app\services\time-filter.service.ts" />
+    <TypeScriptCompile Include="src\app\services\user-management.service.ts" />
+    <TypeScriptCompile Include="src\app\shared\associated-to\associated-to.component.ts" />
+    <TypeScriptCompile Include="src\app\shared\Detail-Actions\Detail-Actions.component.ts" />
+    <TypeScriptCompile Include="src\app\shared\filter-score-status\filter-score-status.pipe.ts" />
+    <TypeScriptCompile Include="src\app\shared\item-cards\initiative-card\initiative-card.component.ts" />
+    <TypeScriptCompile Include="src\app\shared\item-cards\kpi-card\kpi-card.component.ts" />
+    <TypeScriptCompile Include="src\app\shared\loader\loader.component.ts" />
+    <TypeScriptCompile Include="src\app\shared\risks-filters\risks-filter.pipe.ts" />
+    <TypeScriptCompile Include="src\app\shared\search-kpi\search-kpi.component.ts" />
+    <TypeScriptCompile Include="src\app\services\time-filter-events.service.ts" />
+    <TypeScriptCompile Include="src\app\shared\shared.module.ts" />
+    <TypeScriptCompile Include="src\app\shared\strategy-item-with-score-and-childrenlist\strategy-item-with-score-and-childrenlist.component.ts" />
+    <TypeScriptCompile Include="src\app\shared\structure-filter\structure-nodes-filter.component.ts" />
+    <TypeScriptCompile Include="src\app\shared\time-periods\time-periods.component.ts" />
+    <TypeScriptCompile Include="src\app\shared\tree-view\selected-node.service.ts" />
+    <TypeScriptCompile Include="src\app\shared\tree-view\tree-view.component.ts" />
+    <TypeScriptCompile Include="src\app\strategic-dashboard\strategic-dashboard.module.ts" />
+    <TypeScriptCompile Include="src\app\strategic-dashboard\strategy\list-plans.component.ts" />
+    <TypeScriptCompile Include="src\app\shared\item-cards\objective-card\objective-card.component.ts" />
+    <TypeScriptCompile Include="src\app\shared\people-picker\people-picker.component.ts" />
+    <TypeScriptCompile Include="src\app\shared\item-cards\perspective-card\perspective-card.component.ts" />
+    <TypeScriptCompile Include="src\app\shared\order-by\order-by.pipe.ts" />
+    <TypeScriptCompile Include="src\app\shared\strategy-plan-filter\strategy-plan-filter.component.ts" />
+    <TypeScriptCompile Include="src\app\strategic-dashboard\strategy\manage-strategy-item.component.ts" />
+    <TypeScriptCompile Include="src\app\shared\user-info\user-visibility.service.ts" />
+    <TypeScriptCompile Include="src\app\app.component.ts" />
+    <TypeScriptCompile Include="src\app\app.module.ts" />
+    <TypeScriptCompile Include="src\app\app-routing.module.ts" />
+    <TypeScriptCompile Include="src\environments\environment.prod.ts" />
+    <TypeScriptCompile Include="src\environments\environment.ts" />
+    <TypeScriptCompile Include="src\libraries.ts" />
+    <TypeScriptCompile Include="src\main.ts" />
+    <TypeScriptCompile Include="src\app\my-dashboard\my-dashboard.component.ts" />
+    <TypeScriptCompile Include="src\app\reducers\organization-unit-filter-reducer.ts" />
+    <TypeScriptCompile Include="src\app\reducers\index.ts" />
+    <TypeScriptCompile Include="src\app\shared\time-filter\time-filter.component.ts" />
+    <TypeScriptCompile Include="src\app\shared\orgnization-unit-filter\organization-unit-filter.component.ts" />
+    <TypeScriptCompile Include="src\app\reducers\time-filter-reducer.ts" />
+    <TypeScriptCompile Include="src\app\shared\user-info\user-info.component.ts" />
+    <TypeScriptCompile Include="src\app\shared\user-info\user-info.service.ts" />
+    <TypeScriptCompile Include="src\app\strategic-dashboard\strategy\strategic-dashboard.component.ts" />
+    <TypeScriptCompile Include="src\app\common.ts" />
+    <TypeScriptCompile Include="src\app\shared\item-cards\theme-card\theme-card.component.ts" />
+    <TypeScriptCompile Include="src\app\test-page\test-page.component.ts" />
+    <TypeScriptCompile Include="src\app\test-page\test-page.service.ts" />
+    <TypeScriptCompile Include="src\app\utilities\actions.ts" />
+    <TypeScriptCompile Include="src\app\utilities\common.ts" />
+    <TypeScriptCompile Include="src\app\utilities\enumerations.ts" />
+    <TypeScriptCompile Include="src\app\utilities\exception-handling.service.ts" />
+    <TypeScriptCompile Include="src\app\utilities\ontrack-utilities-service.ts" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{4A0DDDB5-7A95-4FBF-97CC-616D07737A77}" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="src\assets\styles\sass\components\strategy-item\_strategy-item.scss" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="..\..\Solution Items\GlobalAssemblyInfo.cs">
+      <Link>Properties\GlobalAssemblyInfo.cs</Link>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="src\app\data-integration\data-integration-log\" />
+    <Folder Include="src\app\shared\card-animation\" />
+    <Folder Include="src\assets\styles\sass\shared\fonts\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="src\assets\styles\sass\components\comments\_comments.scss" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="src\assets\styles\sass\components\strategy-item\strategy-planning\_strategy-planning.scss" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="src\app\kpi-management\kpi-quick-add\kpi-quick-add.component.html" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="src\assets\fonts\Glyphter\Glyphter.eot" />
+    <Content Include="src\assets\fonts\Glyphter\Glyphter.ttf" />
+    <Content Include="src\assets\fonts\Glyphter\Glyphter.woff" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="src\assets\styles\sass\shared\notifications\_notifications.scss" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="src\assets\styles\sass\shared\dropdowns\_dropdowns.scss" />
+    <Content Include="src\assets\styles\sass\components\kpi-management\_kpi-dimensions.scss" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="src\assets\styles\sass\shared\login\_login.scss" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="src\assets\styles\sass\components\notifications\_notifications.scss" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="src\assets\styles\sass\components\kpi-management\kpis-with-dimensions\_kpis-with-dimensions.scss" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="src\assets\styles\sass\components\kpi-management\kpis-threshold\_kpis-threshold.scss" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="src\assets\fonts\ontrack\fonts\ontrack.eot" />
+    <Content Include="src\assets\fonts\ontrack\fonts\ontrack.ttf" />
+    <Content Include="src\assets\fonts\ontrack\fonts\ontrack.woff" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="package-lock.json" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="src\assets\styles\sass\components\kpi-management\manage-benchmarks\_manage-benchmarks.scss" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="src\app\item-level-dashboards\operational-strategy-items-dashboards\program-dashboard.component.html" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="src\assets\styles\sass\components\dynamic-custom-fields\_dynamic-custom-fields.scss" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="src\app\shared\item-list\project-program-list\project-program-list.component.html" />
+  </ItemGroup>
+  <ItemGroup>
+    <TypeScriptCompile Include="src\app\shared\item-list\project-program-list\project-program-list.component.ts" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="src\assets\styles\sass\shared\loader\_loader.scss" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="src\assets\styles\sass\shared\_variables.scss" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="src\assets\styles\sass\shared\tooltips\_tooltips.scss" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="src\assets\styles\sass\shared\alerts\_alerts.scss" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="src\assets\styles\sass\shared\popovers\_popovers.scss" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="src\assets\styles\sass\shared\tabs\_tabs.scss" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="src\assets\styles\sass\shared\_fonts.scss" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="src\assets\styles\sass\shared\no-data\_no-data.scss" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="ng-package.json" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="src\assets\styles\sass\components\manage-initiative\_pending-initiative.scss" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="src\assets\styles\sass\shared\custom-scroll\_custom-scroll.scss" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="src\config\config.prod.json" />
+    <Content Include="src\config\config.ui.json" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="src\app\administration\reporting-management\reporting-management.component.scss" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="src\app\shared\time-filter-multiselect\time-filter-multiselect.component.scss" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="src\assets\styles\sass\components\administration\_reporting-management.scss" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="src\assets\styles\sass\libs\bootstrap\scss\.csscomb.json" />
+    <Content Include="src\assets\styles\sass\libs\bootstrap\scss\.scss-lint.yml" />
+    <Content Include="src\assets\styles\sass\libs\bootstrap\scss\bootstrap-flex.scss" />
+    <Content Include="src\assets\styles\sass\libs\bootstrap\scss\bootstrap-grid.scss" />
+    <Content Include="src\assets\styles\sass\libs\bootstrap\scss\bootstrap-reboot.scss" />
+    <Content Include="src\assets\styles\sass\libs\bootstrap\scss\bootstrap.scss" />
+    <Content Include="src\assets\styles\sass\libs\bootstrap\scss\mixins\_alert.scss" />
+    <Content Include="src\assets\styles\sass\libs\bootstrap\scss\mixins\_background-variant.scss" />
+    <Content Include="src\assets\styles\sass\libs\bootstrap\scss\mixins\_badge.scss" />
+    <Content Include="src\assets\styles\sass\libs\bootstrap\scss\mixins\_border-radius.scss" />
+    <Content Include="src\assets\styles\sass\libs\bootstrap\scss\mixins\_box-shadow.scss" />
+    <Content Include="src\assets\styles\sass\libs\bootstrap\scss\mixins\_breakpoints.scss" />
+    <Content Include="src\assets\styles\sass\libs\bootstrap\scss\mixins\_buttons.scss" />
+    <Content Include="src\assets\styles\sass\libs\bootstrap\scss\mixins\_cards.scss" />
+    <Content Include="src\assets\styles\sass\libs\bootstrap\scss\mixins\_caret.scss" />
+    <Content Include="src\assets\styles\sass\libs\bootstrap\scss\mixins\_center-block.scss" />
+    <Content Include="src\assets\styles\sass\libs\bootstrap\scss\mixins\_clearfix.scss" />
+    <Content Include="src\assets\styles\sass\libs\bootstrap\scss\mixins\_float.scss" />
+    <Content Include="src\assets\styles\sass\libs\bootstrap\scss\mixins\_forms.scss" />
+    <Content Include="src\assets\styles\sass\libs\bootstrap\scss\mixins\_gradients.scss" />
+    <Content Include="src\assets\styles\sass\libs\bootstrap\scss\mixins\_grid-framework.scss" />
+    <Content Include="src\assets\styles\sass\libs\bootstrap\scss\mixins\_grid.scss" />
+    <Content Include="src\assets\styles\sass\libs\bootstrap\scss\mixins\_hover.scss" />
+    <Content Include="src\assets\styles\sass\libs\bootstrap\scss\mixins\_image.scss" />
+    <Content Include="src\assets\styles\sass\libs\bootstrap\scss\mixins\_label.scss" />
+    <Content Include="src\assets\styles\sass\libs\bootstrap\scss\mixins\_list-group.scss" />
+    <Content Include="src\assets\styles\sass\libs\bootstrap\scss\mixins\_lists.scss" />
+    <Content Include="src\assets\styles\sass\libs\bootstrap\scss\mixins\_nav-divider.scss" />
+    <Content Include="src\assets\styles\sass\libs\bootstrap\scss\mixins\_navbar-align.scss" />
+    <Content Include="src\assets\styles\sass\libs\bootstrap\scss\mixins\_pagination.scss" />
+    <Content Include="src\assets\styles\sass\libs\bootstrap\scss\mixins\_progress.scss" />
+    <Content Include="src\assets\styles\sass\libs\bootstrap\scss\mixins\_pulls.scss" />
+    <Content Include="src\assets\styles\sass\libs\bootstrap\scss\mixins\_reset-filter.scss" />
+    <Content Include="src\assets\styles\sass\libs\bootstrap\scss\mixins\_reset-text.scss" />
+    <Content Include="src\assets\styles\sass\libs\bootstrap\scss\mixins\_resize.scss" />
+    <Content Include="src\assets\styles\sass\libs\bootstrap\scss\mixins\_screen-reader.scss" />
+    <Content Include="src\assets\styles\sass\libs\bootstrap\scss\mixins\_size.scss" />
+    <Content Include="src\assets\styles\sass\libs\bootstrap\scss\mixins\_tab-focus.scss" />
+    <Content Include="src\assets\styles\sass\libs\bootstrap\scss\mixins\_table-row.scss" />
+    <Content Include="src\assets\styles\sass\libs\bootstrap\scss\mixins\_tag.scss" />
+    <Content Include="src\assets\styles\sass\libs\bootstrap\scss\mixins\_text-emphasis.scss" />
+    <Content Include="src\assets\styles\sass\libs\bootstrap\scss\mixins\_text-hide.scss" />
+    <Content Include="src\assets\styles\sass\libs\bootstrap\scss\mixins\_text-truncate.scss" />
+    <Content Include="src\assets\styles\sass\libs\bootstrap\scss\mixins\_transition.scss" />
+    <Content Include="src\assets\styles\sass\libs\bootstrap\scss\mixins\_visibility.scss" />
+    <Content Include="src\assets\styles\sass\libs\bootstrap\scss\utilities\_align.scss" />
+    <Content Include="src\assets\styles\sass\libs\bootstrap\scss\utilities\_background.scss" />
+    <Content Include="src\assets\styles\sass\libs\bootstrap\scss\utilities\_borders.scss" />
+    <Content Include="src\assets\styles\sass\libs\bootstrap\scss\utilities\_clearfix.scss" />
+    <Content Include="src\assets\styles\sass\libs\bootstrap\scss\utilities\_display.scss" />
+    <Content Include="src\assets\styles\sass\libs\bootstrap\scss\utilities\_embed.scss" />
+    <Content Include="src\assets\styles\sass\libs\bootstrap\scss\utilities\_flex.scss" />
+    <Content Include="src\assets\styles\sass\libs\bootstrap\scss\utilities\_float.scss" />
+    <Content Include="src\assets\styles\sass\libs\bootstrap\scss\utilities\_position.scss" />
+    <Content Include="src\assets\styles\sass\libs\bootstrap\scss\utilities\_screenreaders.scss" />
+    <Content Include="src\assets\styles\sass\libs\bootstrap\scss\utilities\_sizing.scss" />
+    <Content Include="src\assets\styles\sass\libs\bootstrap\scss\utilities\_spacing.scss" />
+    <Content Include="src\assets\styles\sass\libs\bootstrap\scss\utilities\_text.scss" />
+    <Content Include="src\assets\styles\sass\libs\bootstrap\scss\utilities\_visibility.scss" />
+    <Content Include="src\assets\styles\sass\libs\bootstrap\scss\_alert.scss" />
+    <Content Include="src\assets\styles\sass\libs\bootstrap\scss\_animation.scss" />
+    <Content Include="src\assets\styles\sass\libs\bootstrap\scss\_badge.scss" />
+    <Content Include="src\assets\styles\sass\libs\bootstrap\scss\_breadcrumb.scss" />
+    <Content Include="src\assets\styles\sass\libs\bootstrap\scss\_button-group.scss" />
+    <Content Include="src\assets\styles\sass\libs\bootstrap\scss\_buttons.scss" />
+    <Content Include="src\assets\styles\sass\libs\bootstrap\scss\_card.scss" />
+    <Content Include="src\assets\styles\sass\libs\bootstrap\scss\_carousel.scss" />
+    <Content Include="src\assets\styles\sass\libs\bootstrap\scss\_close.scss" />
+    <Content Include="src\assets\styles\sass\libs\bootstrap\scss\_code.scss" />
+    <Content Include="src\assets\styles\sass\libs\bootstrap\scss\_custom-forms.scss" />
+    <Content Include="src\assets\styles\sass\libs\bootstrap\scss\_custom.scss" />
+    <Content Include="src\assets\styles\sass\libs\bootstrap\scss\_dropdown.scss" />
+    <Content Include="src\assets\styles\sass\libs\bootstrap\scss\_forms.scss" />
+    <Content Include="src\assets\styles\sass\libs\bootstrap\scss\_functions.scss" />
+    <Content Include="src\assets\styles\sass\libs\bootstrap\scss\_grid.scss" />
+    <Content Include="src\assets\styles\sass\libs\bootstrap\scss\_images.scss" />
+    <Content Include="src\assets\styles\sass\libs\bootstrap\scss\_input-group.scss" />
+    <Content Include="src\assets\styles\sass\libs\bootstrap\scss\_jumbotron.scss" />
+    <Content Include="src\assets\styles\sass\libs\bootstrap\scss\_labels.scss" />
+    <Content Include="src\assets\styles\sass\libs\bootstrap\scss\_list-group.scss" />
+    <Content Include="src\assets\styles\sass\libs\bootstrap\scss\_media.scss" />
+    <Content Include="src\assets\styles\sass\libs\bootstrap\scss\_mixins.scss" />
+    <Content Include="src\assets\styles\sass\libs\bootstrap\scss\_modal.scss" />
+    <Content Include="src\assets\styles\sass\libs\bootstrap\scss\_nav.scss" />
+    <Content Include="src\assets\styles\sass\libs\bootstrap\scss\_navbar.scss" />
+    <Content Include="src\assets\styles\sass\libs\bootstrap\scss\_normalize.scss" />
+    <Content Include="src\assets\styles\sass\libs\bootstrap\scss\_pager.scss" />
+    <Content Include="src\assets\styles\sass\libs\bootstrap\scss\_pagination.scss" />
+    <Content Include="src\assets\styles\sass\libs\bootstrap\scss\_popover.scss" />
+    <Content Include="src\assets\styles\sass\libs\bootstrap\scss\_print.scss" />
+    <Content Include="src\assets\styles\sass\libs\bootstrap\scss\_progress.scss" />
+    <Content Include="src\assets\styles\sass\libs\bootstrap\scss\_reboot.scss" />
+    <Content Include="src\assets\styles\sass\libs\bootstrap\scss\_responsive-embed.scss" />
+    <Content Include="src\assets\styles\sass\libs\bootstrap\scss\_root.scss" />
+    <Content Include="src\assets\styles\sass\libs\bootstrap\scss\_tables.scss" />
+    <Content Include="src\assets\styles\sass\libs\bootstrap\scss\_tags.scss" />
+    <Content Include="src\assets\styles\sass\libs\bootstrap\scss\_tooltip.scss" />
+    <Content Include="src\assets\styles\sass\libs\bootstrap\scss\_transitions.scss" />
+    <Content Include="src\assets\styles\sass\libs\bootstrap\scss\_type.scss" />
+    <Content Include="src\assets\styles\sass\libs\bootstrap\scss\_utilities-background.scss" />
+    <Content Include="src\assets\styles\sass\libs\bootstrap\scss\_utilities-responsive.scss" />
+    <Content Include="src\assets\styles\sass\libs\bootstrap\scss\_utilities-spacing.scss" />
+    <Content Include="src\assets\styles\sass\libs\bootstrap\scss\_utilities.scss" />
+    <Content Include="src\assets\styles\sass\libs\bootstrap\scss\_variables.scss" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="src\assets\scripts\libs\bootstrap.min.js.map" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="src\assets\scripts\libs\ckeditor\CHANGES.md" />
+    <Content Include="src\assets\scripts\libs\ckeditor\LICENSE.md" />
+    <Content Include="src\assets\scripts\libs\ckeditor\plugins\scayt\CHANGELOG.md" />
+    <Content Include="src\assets\scripts\libs\ckeditor\plugins\scayt\LICENSE.md" />
+    <Content Include="src\assets\scripts\libs\ckeditor\plugins\scayt\README.md" />
+    <Content Include="src\assets\scripts\libs\ckeditor\plugins\wsc\LICENSE.md" />
+    <Content Include="src\assets\scripts\libs\ckeditor\plugins\wsc\README.md" />
+    <Content Include="src\assets\scripts\libs\ckeditor\README.md" />
+    <Content Include="src\assets\scripts\libs\ckeditor\samples\old\assets\posteddata.php" />
+    <Content Include="src\assets\scripts\libs\ckeditor\samples\old\htmlwriter\assets\outputforflash\outputforflash.fla" />
+    <Content Include="src\assets\scripts\libs\ckeditor\samples\old\sample_posteddata.php" />
+    <Content Include="src\assets\scripts\libs\ckeditor\samples\toolbarconfigurator\font\config.json" />
+    <Content Include="src\assets\scripts\libs\ckeditor\samples\toolbarconfigurator\font\fontello.eot" />
+    <Content Include="src\assets\scripts\libs\ckeditor\samples\toolbarconfigurator\font\fontello.ttf" />
+    <Content Include="src\assets\scripts\libs\ckeditor\samples\toolbarconfigurator\font\fontello.woff" />
+    <Content Include="src\assets\scripts\libs\ckeditor\samples\toolbarconfigurator\lib\codemirror\LICENSE" />
+    <Content Include="src\assets\scripts\libs\ckeditor\skins\moono-lisa\readme.md" />
+    <Content Include="src\assets\scripts\libs\jquery.scrollbar\.bower.json" />
+    <Content Include="src\assets\scripts\libs\jquery.scrollbar\bower.json" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="src\assets\scripts\libs\jquery\.bower.json" />
+    <Content Include="src\assets\scripts\libs\jquery\bower.json" />
+    <Content Include="src\assets\scripts\libs\jquery\dist\jquery.min.map" />
+    <Content Include="src\assets\scripts\libs\jquery\src\sizzle\dist\sizzle.min.map" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="src\assets\styles\libs\font-awesome\.bower.json" />
+    <Content Include="src\assets\styles\libs\font-awesome\.npmignore" />
+    <Content Include="src\assets\styles\libs\font-awesome\bower.json" />
+    <Content Include="src\assets\styles\libs\font-awesome\css\font-awesome.css.map" />
+    <Content Include="src\assets\styles\libs\font-awesome\fonts\fontawesome-webfont.eot" />
+    <Content Include="src\assets\styles\libs\font-awesome\fonts\fontawesome-webfont.ttf" />
+    <Content Include="src\assets\styles\libs\font-awesome\fonts\fontawesome-webfont.woff" />
+    <Content Include="src\assets\styles\libs\font-awesome\fonts\fontawesome-webfont.woff2" />
+    <Content Include="src\assets\styles\libs\font-awesome\fonts\FontAwesome.otf" />
+    <Content Include="src\assets\styles\libs\font-awesome\less\animated.less" />
+    <Content Include="src\assets\styles\libs\font-awesome\less\bordered-pulled.less" />
+    <Content Include="src\assets\styles\libs\font-awesome\less\core.less" />
+    <Content Include="src\assets\styles\libs\font-awesome\less\fixed-width.less" />
+    <Content Include="src\assets\styles\libs\font-awesome\less\font-awesome.less" />
+    <Content Include="src\assets\styles\libs\font-awesome\less\icons.less" />
+    <Content Include="src\assets\styles\libs\font-awesome\less\larger.less" />
+    <Content Include="src\assets\styles\libs\font-awesome\less\list.less" />
+    <Content Include="src\assets\styles\libs\font-awesome\less\mixins.less" />
+    <Content Include="src\assets\styles\libs\font-awesome\less\path.less" />
+    <Content Include="src\assets\styles\libs\font-awesome\less\rotated-flipped.less" />
+    <Content Include="src\assets\styles\libs\font-awesome\less\screen-reader.less" />
+    <Content Include="src\assets\styles\libs\font-awesome\less\stacked.less" />
+    <Content Include="src\assets\styles\libs\font-awesome\less\variables.less" />
+    <Content Include="src\assets\styles\libs\font-awesome\scss\font-awesome.scss" />
+    <Content Include="src\assets\styles\libs\font-awesome\scss\_animated.scss" />
+    <Content Include="src\assets\styles\libs\font-awesome\scss\_bordered-pulled.scss" />
+    <Content Include="src\assets\styles\libs\font-awesome\scss\_core.scss" />
+    <Content Include="src\assets\styles\libs\font-awesome\scss\_fixed-width.scss" />
+    <Content Include="src\assets\styles\libs\font-awesome\scss\_icons.scss" />
+    <Content Include="src\assets\styles\libs\font-awesome\scss\_larger.scss" />
+    <Content Include="src\assets\styles\libs\font-awesome\scss\_list.scss" />
+    <Content Include="src\assets\styles\libs\font-awesome\scss\_mixins.scss" />
+    <Content Include="src\assets\styles\libs\font-awesome\scss\_path.scss" />
+    <Content Include="src\assets\styles\libs\font-awesome\scss\_rotated-flipped.scss" />
+    <Content Include="src\assets\styles\libs\font-awesome\scss\_screen-reader.scss" />
+    <Content Include="src\assets\styles\libs\font-awesome\scss\_stacked.scss" />
+    <Content Include="src\assets\styles\libs\font-awesome\scss\_variables.scss" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="src\assets\styles\sass\components\error-page\_error.scss" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="src\app\item-level-dashboards\structure-item-dashboard\structure-item-dashboard.component.scss" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="src\assets\fonts\DinNextArabic\DINNextLTArabic-Light.eot" />
+    <Content Include="src\assets\fonts\DinNextArabic\DINNextLTArabic-Light.ttf" />
+    <Content Include="src\assets\fonts\DinNextArabic\DINNextLTArabic-Light.woff" />
+    <Content Include="src\assets\fonts\DinNextArabic\DINNextLTArabic-Medium.eot" />
+    <Content Include="src\assets\fonts\DinNextArabic\DINNextLTArabic-Medium.ttf" />
+    <Content Include="src\assets\fonts\DinNextArabic\DINNextLTArabic-Medium.woff" />
+    <Content Include="src\assets\fonts\DinNextArabic\DINNextLTArabic-Regular.eot" />
+    <Content Include="src\assets\fonts\DinNextArabic\DINNextLTArabic-Regular.ttf" />
+    <Content Include="src\assets\fonts\DinNextArabic\DINNextLTArabic-Regular.woff" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="src\assets\styles\sass\shared\modals\_custom-modals.scss" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="src\assets\styles\sass\shared\milestones-outputs\_milestones-outputs.scss" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="src\assets\styles\sass\components\kpi-management\_kpis-performance.scss" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="src\assets\styles\sass\components\_compare_versions.scss" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="angular.json" />
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignAssembly>true</SignAssembly>
+  </PropertyGroup>
+  <PropertyGroup>
+    <AssemblyOriginatorKeyFile>..\..\Solution Items\GTM_GPM.snk</AssemblyOriginatorKeyFile>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\TypeScript\Microsoft.TypeScript.targets" Condition="Exists('$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\TypeScript\Microsoft.TypeScript.targets')" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>False</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>53667</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:92/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+      <UserProperties _1angular-cli_1json__JSONSchema="" package_1json__JSONSchema="" />
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it.
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

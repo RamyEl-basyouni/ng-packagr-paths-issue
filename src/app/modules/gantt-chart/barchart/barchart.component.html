@@ -1,0 +1,18 @@
+<span class="ganttBar "  [ngStyle]="setStyle()">
+
+    <span [ngStyle]="setRightArrow()" class="arrowCont">
+        <i class="fa fa-sort-desc" aria-hidden="true"></i>
+        
+    </span>
+    <span class="arrtoolTip arrtoolTipRight">{{ganttbar.rightArrowData}}</span>
+
+    <span [ngStyle]="setLeftArrow()" class="arrowCont">
+        <i class="fa fa-sort-desc" aria-hidden="true"></i>
+        
+    </span>
+    <span class="arrtoolTip arrtoolTipLeft">{{ganttbar.leftArrowData}}</span>
+
+    <span class="pull-right percentageTxt">{{ganttbar.barData}}</span>
+    <!--<span class="pull-left"  style="color: white;">{{ganttbar.barData}}</span>-->
+
+</span>

@@ -1,0 +1,33 @@
+{
+    "$schema": "./node_modules/ng-packagr/ng-package.schema.json",
+    "dest": "lib-dist",
+    "lib": {
+        "entryFile": "public-api.ts",
+        "umdModuleIds": {
+            "primeng/primeng": "primeng",
+            "ng2-file-upload": "ng2-file-upload",
+            "moment": "moment",
+            "angular2-highcharts": "angular2-highcharts",
+            "angular2-highcharts/dist/HighchartsService": "angular2-highcharts/dist/HighchartsService",
+            "angular2-highcharts/dist": "angular2-highcharts/dist",
+            "highcharts": "highcharts",
+            "lodash": "lodash",
+            "alertify.js": "alertify",
+            "rxjs": "rxjs",
+            "ng2-completer": "ng2-completer",
+            "ngx-scroll-event": "ngx-scroll-event/src",
+            "ng2-auto-complete": "ng2-auto-complete",
+            "@ngrx/store": "@ngrx/store",
+            "@ngx-translate/core": "@ngx-translate/core",
+            "@ngx-translate/http-loader": "@ngx-translate/http-loader",
+            "angular-tree-component": "angular-tree-component",
+            "autocomplete": "autocomplete",
+            "core-js": "core-js",
+            "jquery": "jquery",
+            "ng2-ckeditor": "ng2-ckeditor",
+            "ng2-select-compat": "ng2-select-compat"
+        }
+    },
+    "whitelistedNonPeerDependencies": ["."]
+}
+

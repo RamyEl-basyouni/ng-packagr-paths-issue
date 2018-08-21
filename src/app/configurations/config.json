@@ -1,0 +1,5 @@
+{
+ "apiUrl": "http://localhost:92/API/",
+  "debugging": true,
+   "ValuesSeparator": "#@#"
+}

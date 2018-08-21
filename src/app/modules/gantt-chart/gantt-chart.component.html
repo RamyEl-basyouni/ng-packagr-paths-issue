@@ -1,0 +1,38 @@
+<!--<div class="ganttChartCont">
+    <app-barchart [ganttbar]="Gantt.GanttBarStart"></app-barchart>
+    <app-barchart [ganttbar]="Gantt.GanttBarProgress"></app-barchart>
+    <app-barchart [ganttbar]="Gantt.GanttBarEnd"></app-barchart>
+    <app-barchart [ganttbar]="Gantt.GanttBarForcasted"></app-barchart>
+</div>
+
+
+<div class="" *ngFor="let bar of ganttBars">
+    <app-barchart [ganttbarr]="bar"></app-barchart>
+</div>-->
+
+<!--<div *ngFor="let arrow of ganttArrows">
+    <div class="ganttBar"  [ngStyle]="setStyle(arrow)">
+        <span [ngStyle]="setArrowStyle()" class="arrowCont">
+            <i class="fa fa-sort-desc" aria-hidden="true"></i>
+
+        </span>
+        <span class="arrtoolTip arrtoolTipRight">{{arrow.label}}</span>
+    </div>
+</div>-->
+<div class="ganttChartCont">
+    <app-barchart *ngFor="let bar of ganttBars" [ganttbar]="bar"></app-barchart>
+
+
+    <div *ngFor="let arrow of ganttArrows">
+        <div  [ngStyle]="setStyle(arrow)" [ngClass]="getArrrowDirection(arrow.day)" [hidden]="arrow.label==''">
+            <span class="arrowCont" >
+                <i class="fa fa-sort-desc" aria-hidden="true"></i>
+
+            </span>
+            <span class="arrtoolTip">{{arrow.label}}</span>
+        </div>
+    </div>
+
+
+
+    </div>
